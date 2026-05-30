@@ -961,4 +961,62 @@ function appendLink(list,txt,url){
   const a=document.createElement('a');
   a.href=url; a.target='_blank'; a.textContent='↗ '+txt;
   const d=document.createElement('button');
-  d.className='del-link'; d.tex
+  d.className='del-link'; d.text.onclick=()=>{span.remove();autoSave()};
+  span.appendChild(a); span.appendChild(d);
+  list.appendChild(span);
+}
+
+// ── PERSIST ──────────────────────────────────────────────────────
+function collectState(){
+  const s={checks:{},globalNotes:[],days:[]};
+  document.querySelectorAll('input[type=checkbox]').forEach(cb=>{s.checks[cb.id]=cb.checked});
+  document.querySelectorAll('.global-note [contenteditable]').forEach((el,i)=>{s.globalNotes[i]=el.innerHTML});
+  document.querySelectorAll('.day-body').forEach((body,i)=>{
+    const note=body.querySelector('.note-area [contenteditable]');
+    const infos=[]; body.querySelectorAll('.info-box [contenteditable]').forEach(el=>infos.push(el.innerHTML));
+    const links=[]; body.querySelectorAll('.link-list a').forEach(a=>links.push({txt:a.textContent.replace('\u2197 ',''),url:a.href}));
+    const minis=[]; body.querySelectorAll('.mini-status').forEach(b=>minis.push({cls:b.className,label:b.textContent}));
+    const statusBtn=body.querySelector('.status-btn[class*="active"]');
+    s.days[i]={note:note?note.innerHTML:'',infos,links,minis,status:statusBtn?statusBtn.className:''};
+  });
+  return s;
+}
+function applyState(s){
+  if(!s) return;
+  if(s.checks) Object.entries(s.checks).forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.checked=v});
+  if(s.globalNotes) document.querySelectorAll('.global-note [contenteditable]').forEach((el,i)=>{if(s.globalNotes[i]!==undefined)el.innerHTML=s.globalNotes[i]});
+  if(s.days) document.querySelectorAll('.day-body').forEach((body,i)=>{
+    const d=s.days[i]; if(!d) return;
+    const note=body.querySelector('.note-area [contenteditable]');
+    if(note&&d.note!==undefined) note.innerHTML=d.note;
+    const infos=body.querySelectorAll('.info-box [contenteditable]');
+    if(d.infos) infos.forEach((el,j)=>{if(d.infos[j]!==undefined)el.innerHTML=d.infos[j]});
+    if(d.links){const list=body.querySelector('.link-list');if(list)d.links.forEach(lk=>appendLink(list,lk.txt,lk.url));}
+    if(d.minis){const btns=body.querySelectorAll('.mini-status');btns.forEach((b,j)=>{if(d.minis[j]){b.className=d.minis[j].cls;b.textContent=d.minis[j].label;}});}
+    if(d.status&&d.status.includes('active')){
+      const match=d.status.match(/active-(\w+)/);
+      if(match){const sb=body.querySelector('.status-btn[onclick*="'+match[1]+'"]');if(sb)sb.classList.add('active-'+match[1]);}
+    }
+  });
+}
+function saveToLocal(){
+  try{localStorage.setItem('pirineo2025v2',JSON.stringify(collectState()));}catch(e){}
+  const t=document.getElementById('toast');
+  t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000);
+}
+let timer;
+function autoSave(){clearTimeout(timer);timer=setTimeout(saveToLocal,1000);}
+function exportHTML(e){
+  e.preventDefault(); saveToLocal();
+  const blob=new Blob([document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob); a.download='Ruta_Pirineo_2025.html'; a.click();
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  try{const saved=localStorage.getItem('pirineo2025v2');if(saved)applyState(JSON.parse(saved));}catch(e){}
+  document.addEventListener('input',autoSave);
+  document.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.addEventListener('change',autoSave));
+});
+</script>
+</body>
+</html>
