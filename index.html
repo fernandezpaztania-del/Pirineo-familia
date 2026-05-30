@@ -39,11 +39,11 @@
   .section-header .tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-left:auto}
 
   /* EDITABLE everywhere */
-  [contenteditable]{outline:none;border-radius:3px;transition:box-shadow 0.15s,background 0.15s}
-  [contenteditable]:hover{background:rgba(74,144,196,0.05)}
-  [contenteditable]:focus{background:rgba(74,144,196,0.08);box-shadow:0 0 0 2px var(--edit-ring)}
+  [contenteditable]{outline:none;border-radius:3px;transition:all 0.15s;border:1.5px dashed transparent;padding:4px 6px;cursor:text;min-height:20px}
+  [contenteditable]:hover{background:rgba(74,144,196,0.06);border-color:rgba(74,144,196,0.4)}
+  [contenteditable]:focus{background:rgba(74,144,196,0.08);border-color:var(--sky);box-shadow:0 0 0 2px var(--edit-ring);cursor:text}
   [contenteditable]:empty::before{content:attr(data-ph);color:#bbb;font-style:italic;pointer-events:none}
-  .edit-hint{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1.5px;color:var(--sky);opacity:.6;text-transform:uppercase;margin-bottom:4px;cursor:default}
+  .edit-hint{display:none}
 
   /* DAY CARDS */
   .day-card{background:white;border:1px solid var(--border);border-radius:6px;margin-bottom:16px;overflow:hidden;box-shadow:0 2px 8px var(--shadow);transition:box-shadow 0.2s}
@@ -213,7 +213,10 @@
   <div class="section-header">
     <span class="section-icon">🗺️</span>
     <h2>Ruta día a día</h2>
-    <span class="tag">clic para expandir · todo editable ✏️</span>
+    <span class="tag">▶ clic cabecera para expandir</span>
+  </div>
+  <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--sky);background:rgba(74,144,196,0.07);border:1px dashed rgba(74,144,196,0.3);border-radius:4px;padding:8px 14px;margin-bottom:16px;">
+    ✏️ &nbsp;Los textos en azul punteado son editables — haz clic sobre ellos para modificarlos
   </div>
 
   <!-- DÍA 1 -->
@@ -278,7 +281,7 @@
             <div class="alt-info">
               <div class="alt-name">Camping Boltaña</div>
               <div class="alt-desc">En Boltaña, 7 km de Aínsa por N-260. Parcelas AC, bungalows, admite mascotas.</div>
-              <div class="alt-links"><a href="https://www.campings.net/en/alquiler-bungalows-camping-boltana-en-boltana.htm" target="_blank">🌐 Web</a></div>
+              <div class="alt-links"><a href="https://www.campingboltana.com" target="_blank">🌐 Web</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -448,7 +451,7 @@
             <div class="alt-info">
               <div class="alt-name">Camping La Borda d'Arnaldet · Sesué</div>
               <div class="alt-desc">A 31 km de Ainsa, en el valle de Benasque. Más tranquilo y pequeño. Parcelas con sombra.</div>
-              <div class="alt-links"><a href="https://www.campings-bungalows.com" target="_blank">🌐 Info</a></div>
+              <div class="alt-links"><a href="https://park4night.com" target="_blank">🌐 Info</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -527,7 +530,7 @@
             <div class="alt-info">
               <div class="alt-name">Aigüestortes Camping Resort · Esterri d'Àneu</div>
               <div class="alt-desc">La Presalla. 154 parcelas con sombra, bungalows, piscina exterior. A 15 min caminando del pueblo.</div>
-              <div class="alt-links"><a href="https://www.trivago.es" target="_blank">🌐 Info Trivago</a></div>
+              <div class="alt-links"><a href="https://lapresalla.com" target="_blank">🌐 Info Trivago</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -535,7 +538,7 @@
             <div class="alt-info">
               <div class="alt-name">Camping Solau · Espot</div>
               <div class="alt-desc">Valoración 9.6. Verde y sereno, entre montañas y cascadas. 10 min del PN, 5 min de Espot. Bar, tienda, wifi.</div>
-              <div class="alt-links"><a href="https://www.pitchup.com" target="_blank">🌐 Pitchup</a></div>
+              <div class="alt-links"><a href="https://www.campingsolau.com" target="_blank">🌐 Pitchup</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -543,7 +546,7 @@
             <div class="alt-info">
               <div class="alt-name">Nou Camping · La Guingueta d'Àneu</div>
               <div class="alt-desc">En el borde del PN Aigüestortes. Piscina climatizada, zona de juegos, restaurante cubierto.</div>
-              <div class="alt-links"><a href="https://www.booking.com" target="_blank">🌐 Booking</a></div>
+              <div class="alt-links"><a href="https://www.noucamping.com" target="_blank">🌐 Booking</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -613,7 +616,7 @@
             <div class="alt-info">
               <div class="alt-name">Camping Stel · Puigcerdà</div>
               <div class="alt-desc">A 2 km de Puigcerdà. Bungalows rústicos, piscina, restaurante, supermercado. Buena alternativa.</div>
-              <div class="alt-links"><a href="https://brujulea.net/campings-baratos/puigcerda" target="_blank">🌐 Info</a></div>
+              <div class="alt-links"><a href="https://www.campingstel.com/es/camping-pirineos/camping-stel-puigcerda/" target="_blank">🌐 Info</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -621,7 +624,7 @@
             <div class="alt-info">
               <div class="alt-name">Basecamps Cerdanya · Queixans</div>
               <div class="alt-desc">Acceso a baño público, bar, cerca de Masella. Valorado por familias. Ambiente activo.</div>
-              <div class="alt-links"><a href="https://www.booking.com" target="_blank">🌐 Booking</a></div>
+              <div class="alt-links"><a href="https://www.noucamping.com" target="_blank">🌐 Booking</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -700,7 +703,7 @@
             <div class="alt-info">
               <div class="alt-name">Wecamp Pedraforca</div>
               <div class="alt-desc">Formato glamping/camping moderno junto al Pedraforca. Bien valorado, cabañas y parcelas.</div>
-              <div class="alt-links"><a href="https://wecamp.es" target="_blank">🌐 Web</a></div>
+              <div class="alt-links"><a href="https://wecamp.es/es/pedraforca/" target="_blank">🌐 Web</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
@@ -708,7 +711,7 @@
             <div class="alt-info">
               <div class="alt-name">Camping Cadí Vacances · Gósol</div>
               <div class="alt-desc">A 1.400 m de altitud, cara sur del Cadí. Único en Cataluña a esa altura. Aire puro y silencio total.</div>
-              <div class="alt-links"><a href="https://www.campings-bungalows.com" target="_blank">🌐 Info</a></div>
+              <div class="alt-links"><a href="https://park4night.com" target="_blank">🌐 Info</a></div>
             </div>
             <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
           </div>
