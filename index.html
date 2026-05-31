@@ -3,737 +3,604 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🚐 Ruta Pirineo · Agosto 2025</title>
+<title>🚐 Pirineo en Autocaravana · Agosto 2025</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink:#1a1a2e; --paper:#f7f3eb; --paper2:#efe9dc;
-    --pine:#2d6a4f; --pine-light:#40916c; --pine-pale:#d8f3dc;
-    --rock:#3d405b; --sky:#4a90c4; --sky-pale:#ddeeff;
-    --amber:#e09c3b; --amber-pale:#fef3dc;
-    --red:#c0392b; --red-pale:#fdecea;
-    --border:#c8bfaf; --shadow:rgba(30,30,50,0.12);
-    --edit-ring:rgba(74,144,196,0.35);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);color:var(--ink);font-family:'Lato',sans-serif;font-weight:300;line-height:1.7;min-height:100vh}
-  body::before{content:'';position:fixed;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(180,160,120,0.08) 28px);pointer-events:none;z-index:0}
-  .page{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 24px 100px}
+:root{
+  --ink:#1a1a2e;--paper:#f7f3eb;--paper2:#efe9dc;
+  --pine:#2d6a4f;--pine-light:#40916c;--pine-pale:#d8f3dc;
+  --rock:#3d405b;--sky:#4a90c4;--amber:#e09c3b;--amber-pale:#fef3dc;
+  --red:#c0392b;--red-pale:#fdecea;--border:#c8bfaf;--shadow:rgba(30,30,50,0.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Lato",sans-serif;font-weight:300;line-height:1.7;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(180,160,120,0.08) 28px);pointer-events:none;z-index:0}
+.page{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 24px 100px}
 
-  /* COVER */
-  .cover{text-align:center;padding:64px 0 48px;border-bottom:2px solid var(--border);margin-bottom:56px}
-  .cover::after{content:'';display:block;width:80px;height:3px;background:var(--pine);margin:24px auto 0;border-radius:2px}
-  .cover-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;color:var(--pine);text-transform:uppercase;margin-bottom:16px}
-  .cover h1{font-family:'Playfair Display',serif;font-size:clamp(30px,6vw,52px);font-weight:700;color:var(--rock);line-height:1.15;margin-bottom:12px}
-  .cover .subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--pine-light);margin-bottom:20px}
-  .cover .meta{font-family:'DM Mono',monospace;font-size:12px;color:#888;letter-spacing:1px}
-  .stats-row{display:flex;justify-content:center;gap:40px;margin-top:32px;flex-wrap:wrap}
-  .stat .num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--pine);display:block}
-  .stat .lbl{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:#999;text-transform:uppercase}
+/* COVER */
+.cover{text-align:center;padding:60px 0 44px;border-bottom:2px solid var(--border);margin-bottom:52px}
+.cover::after{content:"";display:block;width:80px;height:3px;background:var(--pine);margin:22px auto 0;border-radius:2px}
+.cover-label{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:4px;color:var(--pine);text-transform:uppercase;margin-bottom:14px}
+.cover h1{font-family:"Playfair Display",serif;font-size:clamp(28px,6vw,50px);font-weight:700;color:var(--rock);line-height:1.15;margin-bottom:10px}
+.cover .subtitle{font-family:"Playfair Display",serif;font-style:italic;font-size:17px;color:var(--pine-light);margin-bottom:16px}
+.cover .meta{font-family:"DM Mono",monospace;font-size:12px;color:#888;letter-spacing:1px}
+.stats-row{display:flex;justify-content:center;gap:36px;margin-top:28px;flex-wrap:wrap}
+.stat .num{font-family:"Playfair Display",serif;font-size:26px;font-weight:700;color:var(--pine);display:block}
+.stat .lbl{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:2px;color:#999;text-transform:uppercase}
 
-  /* SECTIONS */
-  section{margin-bottom:60px}
-  .section-header{display:flex;align-items:baseline;gap:14px;margin-bottom:24px;padding-bottom:10px;border-bottom:1.5px solid var(--border)}
-  .section-icon{font-size:22px;line-height:1}
-  .section-header h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--rock)}
-  .section-header .tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-left:auto}
+/* SECTIONS */
+section{margin-bottom:56px}
+.section-header{display:flex;align-items:baseline;gap:14px;margin-bottom:20px;padding-bottom:10px;border-bottom:1.5px solid var(--border)}
+.section-icon{font-size:22px;line-height:1}
+.section-header h2{font-family:"Playfair Display",serif;font-size:22px;font-weight:700;color:var(--rock)}
+.section-header .tag{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-left:auto}
 
-  /* EDITABLE everywhere */
-  [contenteditable]{outline:none;border-radius:3px;transition:all 0.15s;border:1.5px dashed transparent;padding:4px 6px;cursor:text;min-height:20px}
-  [contenteditable]:hover{background:rgba(74,144,196,0.06);border-color:rgba(74,144,196,0.4)}
-  [contenteditable]:focus{background:rgba(74,144,196,0.08);border-color:var(--sky);box-shadow:0 0 0 2px var(--edit-ring);cursor:text}
-  [contenteditable]:empty::before{content:attr(data-ph);color:#bbb;font-style:italic;pointer-events:none}
-  .edit-hint{display:none}
+/* EDIT */
+[contenteditable]{outline:none;border-radius:3px;transition:all .15s;border:1.5px dashed transparent;padding:3px 5px;cursor:text}
+[contenteditable]:hover{background:rgba(74,144,196,0.06);border-color:rgba(74,144,196,0.4)}
+[contenteditable]:focus{background:rgba(74,144,196,0.09);border-color:var(--sky);box-shadow:0 0 0 2px rgba(74,144,196,0.2)}
+[contenteditable]:empty::before{content:attr(data-ph);color:#bbb;font-style:italic;pointer-events:none}
+.edit-tip{font-family:"DM Mono",monospace;font-size:11px;color:var(--sky);background:rgba(74,144,196,0.07);border:1px dashed rgba(74,144,196,0.3);border-radius:4px;padding:7px 14px;margin-bottom:14px}
 
-  /* DAY CARDS */
-  .day-card{background:white;border:1px solid var(--border);border-radius:6px;margin-bottom:16px;overflow:hidden;box-shadow:0 2px 8px var(--shadow);transition:box-shadow 0.2s}
-  .day-card:hover{box-shadow:0 4px 16px var(--shadow)}
-  .day-header{display:grid;grid-template-columns:90px 1fr auto;align-items:center;cursor:pointer;user-select:none}
-  .day-date{background:var(--rock);color:white;padding:14px 12px;text-align:center;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;min-height:70px;display:flex;flex-direction:column;justify-content:center;gap:4px}
-  .day-date .weekday{font-size:10px;opacity:.7}
-  .day-date .daynum{font-size:20px;font-weight:500;line-height:1}
-  .day-date .month{font-size:10px;opacity:.7}
-  .day-title{padding:14px 18px;flex:1}
-  .day-title h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--rock);margin-bottom:3px}
-  .day-title .route-line{font-family:'DM Mono',monospace;font-size:11px;color:var(--pine);letter-spacing:.5px}
-  .day-km{padding:14px 18px;text-align:right;white-space:nowrap}
-  .day-km .km-big{font-family:'Playfair Display',serif;font-size:20px;color:var(--pine);font-weight:700;display:block}
-  .day-km .km-time{font-family:'DM Mono',monospace;font-size:10px;color:#aaa}
-  .toggle-arrow{display:inline-block;font-size:10px;color:#ccc;padding:14px 16px;transition:transform 0.2s;user-select:none}
-  .toggle-arrow.open{transform:rotate(90deg);color:var(--pine)}
-  .day-body{display:none;border-top:1px solid var(--paper2);padding:20px;background:#fcfaf7}
-  .day-body.open{display:block}
+/* DAY CARDS */
+.day-card{background:white;border:1px solid var(--border);border-radius:6px;margin-bottom:14px;overflow:hidden;box-shadow:0 2px 8px var(--shadow);transition:box-shadow .2s}
+.day-card:hover{box-shadow:0 4px 16px var(--shadow)}
+.day-header{display:grid;grid-template-columns:90px 1fr auto auto;align-items:center;cursor:pointer;user-select:none}
+.day-date{color:white;padding:14px 12px;text-align:center;font-family:"DM Mono",monospace;font-size:11px;letter-spacing:1px;min-height:68px;display:flex;flex-direction:column;justify-content:center;gap:3px}
+.day-date .weekday{font-size:10px;opacity:.7}
+.day-date .daynum{font-size:20px;font-weight:500;line-height:1}
+.day-date .month{font-size:10px;opacity:.7}
+.day-title{padding:12px 16px;flex:1}
+.day-title h3{font-family:"Playfair Display",serif;font-size:16px;font-weight:700;color:var(--rock);margin-bottom:2px}
+.day-title .sub{font-family:"DM Mono",monospace;font-size:11px;color:var(--pine)}
+.day-km{padding:12px 14px;text-align:right;white-space:nowrap}
+.day-km .km-big{font-family:"Playfair Display",serif;font-size:19px;color:var(--pine);font-weight:700;display:block}
+.day-km .km-time{font-family:"DM Mono",monospace;font-size:10px;color:#aaa}
+.toggle-arrow{font-size:10px;color:#ccc;padding:12px 14px;transition:transform .2s;user-select:none}
+.toggle-arrow.open{transform:rotate(90deg);color:var(--pine)}
+.day-body{display:none;border-top:1px solid var(--paper2);padding:18px;background:#fcfaf7}
+.day-body.open{display:block}
 
-  /* INFO GRID */
-  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
-  @media(max-width:600px){.info-grid{grid-template-columns:1fr}}
-  .info-box{background:white;border:1px solid var(--border);border-radius:4px;padding:12px 14px}
-  .ib-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#aaa;margin-bottom:6px}
-  .info-box p{font-size:13.5px;line-height:1.6}
-  .links a{display:inline-flex;align-items:center;gap:5px;font-family:'DM Mono',monospace;font-size:11px;color:var(--sky);text-decoration:none;margin-right:10px;margin-bottom:4px;border-bottom:1px solid transparent;transition:border-color .15s}
-  .links a:hover{border-color:var(--sky)}
-  .acts{list-style:none;margin-bottom:14px}
-  .acts li{font-size:13.5px;padding:4px 0 4px 18px;position:relative;line-height:1.5}
-  .acts li::before{content:'→';position:absolute;left:0;color:var(--pine);font-family:'DM Mono',monospace;font-size:11px;top:5px}
-  .camp-badge{display:inline-flex;align-items:center;gap:6px;background:var(--pine-pale);color:var(--pine);border-radius:3px;padding:5px 10px;font-size:12px;font-family:'DM Mono',monospace;margin-bottom:12px}
+/* STATUS */
+.status-row{display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.status-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase}
+.status-btn{font-family:"DM Mono",monospace;font-size:10px;padding:3px 10px;border-radius:12px;border:1.5px solid var(--border);background:white;cursor:pointer;color:#888;transition:all .15s}
+.status-btn.active-pendiente{background:#fff8e1;border-color:var(--amber);color:var(--amber)}
+.status-btn.active-confirmado{background:var(--pine-pale);border-color:var(--pine);color:var(--pine)}
+.status-btn.active-cambio{background:var(--red-pale);border-color:var(--red);color:var(--red)}
 
-  /* STATUS SELECTOR */
-  .status-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
-  .status-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase}
-  .status-btn{font-family:'DM Mono',monospace;font-size:10px;padding:3px 10px;border-radius:12px;border:1.5px solid var(--border);background:white;cursor:pointer;transition:all .15s;color:#888}
-  .status-btn.active-pendiente{background:#fff8e1;border-color:var(--amber);color:var(--amber)}
-  .status-btn.active-confirmado{background:var(--pine-pale);border-color:var(--pine);color:var(--pine)}
-  .status-btn.active-descartado{background:var(--red-pale);border-color:var(--red);color:var(--red)}
+/* INFO GRID */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+@media(max-width:580px){.info-grid{grid-template-columns:1fr}}
+.info-box{background:white;border:1px solid var(--border);border-radius:4px;padding:11px 13px}
+.ib-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#aaa;margin-bottom:5px}
+.info-box p,.info-box div[contenteditable]{font-size:13.5px;line-height:1.6}
+.links a{display:inline-flex;align-items:center;gap:4px;font-family:"DM Mono",monospace;font-size:11px;color:var(--sky);text-decoration:none;margin-right:8px;margin-bottom:3px}
+.links a:hover{text-decoration:underline}
+.acts{list-style:none;margin-bottom:12px}
+.acts li{font-size:13.5px;padding:3px 0 3px 18px;position:relative;line-height:1.5}
+.acts li::before{content:"→";position:absolute;left:0;color:var(--pine);font-family:"DM Mono",monospace;font-size:11px;top:4px}
+.acts li[contenteditable]{display:block;margin-bottom:2px}
 
-  /* CAMP ALTERNATIVAS */
-  .alt-section{margin-top:12px}
-  .alt-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-bottom:8px}
-  .alt-list{display:flex;flex-direction:column;gap:8px}
-  .alt-item{background:white;border:1px solid var(--border);border-radius:4px;padding:10px 12px;display:flex;align-items:flex-start;gap:10px}
-  .alt-item .alt-info{flex:1;min-width:0}
-  .alt-item .alt-name{font-size:13px;font-weight:700;color:var(--rock);margin-bottom:2px}
-  .alt-item .alt-desc{font-size:12px;color:#666;line-height:1.4}
-  .alt-item .alt-links{margin-top:4px}
-  .alt-item .alt-links a{font-family:'DM Mono',monospace;font-size:10px;color:var(--sky);text-decoration:none;margin-right:8px}
-  .alt-item .alt-links a:hover{text-decoration:underline}
-  .alt-status{flex-shrink:0}
-  .mini-status{font-family:'DM Mono',monospace;font-size:9px;padding:2px 7px;border-radius:10px;border:1px solid var(--border);background:white;cursor:pointer;color:#aaa;transition:all .15s;white-space:nowrap}
-  .mini-status.p{background:#fff8e1;border-color:var(--amber);color:var(--amber)}
-  .mini-status.c{background:var(--pine-pale);border-color:var(--pine);color:var(--pine)}
-  .mini-status.d{background:var(--red-pale);border-color:var(--red);color:var(--red)}
+/* BASE BADGE */
+.base-badge{display:inline-flex;align-items:center;gap:6px;border-radius:3px;padding:4px 10px;font-size:12px;font-family:"DM Mono",monospace;margin-bottom:10px}
+.base-badge.base{background:var(--pine-pale);color:var(--pine)}
+.base-badge.excursion{background:var(--sky-pale,#ddeeff);color:var(--sky)}
 
-  /* NOTE / LINK ADDER */
-  .note-area{margin-top:14px;border:1px dashed var(--border);border-radius:4px;background:var(--amber-pale);padding:10px 12px}
-  .note-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin-bottom:6px}
-  .note-area [contenteditable]{font-size:13px;font-style:italic;color:#666;min-height:28px;display:block;line-height:1.6}
-  .note-area [contenteditable]:focus{color:var(--ink)}
-  .link-adder{margin-top:10px}
-  .link-adder .link-list{margin-bottom:4px}
-  .link-adder .link-list a{display:inline-flex;align-items:center;gap:5px;font-family:'DM Mono',monospace;font-size:11px;color:var(--sky);text-decoration:none;margin-right:8px;margin-bottom:3px}
-  .link-adder .link-list a:hover{text-decoration:underline}
-  .del-link{color:#ccc;cursor:pointer;font-size:13px;margin-left:2px;background:none;border:none;line-height:1;padding:0 2px}
-  .del-link:hover{color:var(--red)}
-  .add-link-row{display:flex;gap:6px;margin-top:4px;flex-wrap:wrap}
-  .add-link-row input{font-family:'DM Mono',monospace;font-size:11px;padding:4px 8px;border:1px solid var(--border);border-radius:3px;background:white;outline:none;flex:1;min-width:80px}
-  .add-link-row input:focus{border-color:var(--sky)}
-  .add-link-row button{font-family:'DM Mono',monospace;font-size:11px;padding:4px 10px;background:var(--sky);color:white;border:none;border-radius:3px;cursor:pointer}
-  .add-link-row button:hover{background:var(--rock)}
+/* CAMP ALTS */
+.alt-section{margin-top:12px}
+.alt-title{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-bottom:7px}
+.alt-list{display:flex;flex-direction:column;gap:7px}
+.alt-item{background:white;border:1px solid var(--border);border-radius:4px;padding:9px 12px;display:flex;align-items:flex-start;gap:10px}
+.alt-info{flex:1;min-width:0}
+.alt-name{font-size:13px;font-weight:700;color:var(--rock);margin-bottom:2px}
+.alt-desc{font-size:12px;color:#666;line-height:1.4;margin-bottom:4px}
+.alt-links a{font-family:"DM Mono",monospace;font-size:10px;color:var(--sky);text-decoration:none;margin-right:8px}
+.alt-links a:hover{text-decoration:underline}
+.mini-status{font-family:"DM Mono",monospace;font-size:9px;padding:2px 7px;border-radius:10px;border:1px solid var(--border);background:white;cursor:pointer;color:#aaa;transition:all .15s;white-space:nowrap;flex-shrink:0}
+.mini-status.p{background:#fff8e1;border-color:var(--amber);color:var(--amber)}
+.mini-status.c{background:var(--pine-pale);border-color:var(--pine);color:var(--pine)}
+.mini-status.d{background:var(--red-pale);border-color:var(--red);color:var(--red)}
 
-  /* KM TABLE */
-  .km-wrap{overflow-x:auto}
-  table.km{width:100%;border-collapse:collapse;font-size:13px;background:white;box-shadow:0 2px 8px var(--shadow);border-radius:6px;overflow:hidden}
-  table.km thead tr{background:var(--rock);color:white}
-  table.km thead th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:12px 14px;text-align:left;font-weight:500}
-  table.km tbody tr:nth-child(odd){background:#fcfaf7}
-  table.km tbody tr:nth-child(even){background:white}
-  table.km tbody tr.total-row{background:var(--pine)!important;color:white;font-weight:700}
-  table.km tbody tr.total-row td{color:white}
-  table.km tbody td{padding:10px 14px;border-top:1px solid var(--paper2);vertical-align:top;line-height:1.5}
-  table.km tbody td.num{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;white-space:nowrap;color:var(--pine)}
-  table.km tbody tr.total-row td.num{color:white}
-  table.km tfoot td{padding:10px 14px;font-family:'DM Mono',monospace;font-size:11px;color:#888;border-top:2px solid var(--border);font-style:italic}
+/* NOTE */
+.note-area{margin-top:12px;border:1px dashed var(--border);border-radius:4px;background:var(--amber-pale);padding:9px 12px}
+.note-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin-bottom:5px}
+.note-area [contenteditable]{font-size:13px;color:#666;min-height:26px;display:block;line-height:1.6}
+.note-area [contenteditable]:focus{color:var(--ink)}
 
-  /* CAMP CARDS */
-  .camp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
-  .camp-card{background:white;border:1px solid var(--border);border-radius:6px;padding:16px;box-shadow:0 1px 6px var(--shadow)}
-  .camp-card .camp-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--rock);margin-bottom:2px}
-  .camp-card .camp-loc{font-family:'DM Mono',monospace;font-size:10px;color:#aaa;letter-spacing:1px;margin-bottom:8px}
-  .camp-card p{font-size:13px;margin-bottom:8px;line-height:1.5}
-  .camp-card .camp-links a{display:inline-flex;align-items:center;gap:4px;font-family:'DM Mono',monospace;font-size:11px;color:var(--sky);text-decoration:none;margin-right:8px;margin-bottom:4px}
-  .camp-card .camp-links a:hover{text-decoration:underline}
-  .badge{display:inline-block;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;border-radius:3px;padding:3px 7px;margin-top:6px}
-  .badge.reserva{background:var(--red-pale);color:var(--red)}
-  .badge.libre{background:var(--pine-pale);color:var(--pine)}
-  .camp-alts{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border)}
-  .camp-alts .alt-header{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#bbb;text-transform:uppercase;margin-bottom:6px}
-  .camp-alt-item{font-size:12px;margin-bottom:5px;padding-left:10px;border-left:2px solid var(--border)}
-  .camp-alt-item strong{display:block;color:var(--rock);font-size:12px}
-  .camp-alt-item a{font-family:'DM Mono',monospace;font-size:10px;color:var(--sky);text-decoration:none}
-  .camp-alt-item a:hover{text-decoration:underline}
+/* LINK ADDER */
+.link-adder{margin-top:9px}
+.la-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:2px;color:#bbb;text-transform:uppercase;margin-bottom:5px}
+.link-list a{display:inline-flex;align-items:center;font-family:"DM Mono",monospace;font-size:11px;color:var(--sky);text-decoration:none;margin-right:8px;margin-bottom:3px}
+.link-list a:hover{text-decoration:underline}
+.del-link{color:#ccc;cursor:pointer;font-size:13px;margin-left:2px;background:none;border:none;line-height:1;padding:0 2px}
+.del-link:hover{color:var(--red)}
+.add-link-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.add-link-row input{font-family:"DM Mono",monospace;font-size:11px;padding:4px 8px;border:1px solid var(--border);border-radius:3px;background:white;outline:none;flex:1;min-width:80px}
+.add-link-row input:focus{border-color:var(--sky)}
+.add-link-row button{font-family:"DM Mono",monospace;font-size:11px;padding:4px 10px;background:var(--sky);color:white;border:none;border-radius:3px;cursor:pointer}
+.add-link-row button:hover{background:var(--rock)}
 
-  /* CHECKLIST */
-  .check-group{margin-bottom:28px}
-  .check-group h3{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--pine);margin-bottom:10px;padding-left:4px}
-  .check-item{display:flex;align-items:flex-start;gap:10px;padding:6px 10px;border-radius:4px;cursor:pointer;transition:background .15s;margin-bottom:2px}
-  .check-item:hover{background:var(--paper2)}
-  .check-item input[type=checkbox]{width:16px;height:16px;margin-top:3px;accent-color:var(--pine);flex-shrink:0;cursor:pointer}
-  .check-item label{font-size:13.5px;cursor:pointer;line-height:1.55;flex:1}
-  .check-item input:checked+label{text-decoration:line-through;color:#aaa}
-  .check-link a{font-family:'DM Mono',monospace;font-size:10px;color:var(--sky);text-decoration:none;margin-left:8px}
-  .check-link a:hover{text-decoration:underline}
+/* KM TABLE */
+.km-wrap{overflow-x:auto}
+table.km{width:100%;border-collapse:collapse;font-size:13px;background:white;box-shadow:0 2px 8px var(--shadow);border-radius:6px;overflow:hidden}
+table.km thead tr{background:var(--rock);color:white}
+table.km thead th{font-family:"DM Mono",monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:11px 13px;text-align:left;font-weight:500}
+table.km tbody tr:nth-child(odd){background:#fcfaf7}
+table.km tbody tr:nth-child(even){background:white}
+table.km tbody tr.total-row{background:var(--pine)!important;font-weight:700}
+table.km tbody tr.total-row td{color:white}
+table.km tbody td{padding:9px 13px;border-top:1px solid var(--paper2);vertical-align:top;line-height:1.5;font-size:13px}
+table.km tbody td.num{font-family:"DM Mono",monospace;font-weight:500;white-space:nowrap;color:var(--pine)}
+table.km tbody tr.total-row td.num{color:white}
+table.km tfoot td{padding:9px 13px;font-family:"DM Mono",monospace;font-size:11px;color:#888;border-top:2px solid var(--border);font-style:italic}
 
-  /* GLOBAL NOTES */
-  .global-note{background:var(--amber-pale);border:1px solid #e8d5a3;border-left:4px solid var(--amber);border-radius:0 4px 4px 0;padding:14px 16px;margin-bottom:10px}
-  .global-note .note-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin-bottom:6px}
-  .global-note [contenteditable]{font-size:13.5px;display:block;min-height:24px;line-height:1.6}
+/* CHECKLIST */
+.check-group{margin-bottom:24px}
+.check-group h3{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--pine);margin-bottom:9px;padding-left:4px}
+.check-item{display:flex;align-items:flex-start;gap:10px;padding:5px 10px;border-radius:4px;cursor:pointer;transition:background .15s;margin-bottom:2px}
+.check-item:hover{background:var(--paper2)}
+.check-item input[type=checkbox]{width:16px;height:16px;margin-top:3px;accent-color:var(--pine);flex-shrink:0;cursor:pointer}
+.check-item label{font-size:13.5px;cursor:pointer;line-height:1.55;flex:1}
+.check-item input:checked+label{text-decoration:line-through;color:#aaa}
+.check-link a{font-family:"DM Mono",monospace;font-size:10px;color:var(--sky);text-decoration:none;margin-left:8px}
+.check-link a:hover{text-decoration:underline}
 
-  /* LINKS GRID */
-  .links-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
-  .link-pill{display:flex;align-items:center;gap:8px;background:white;border:1px solid var(--border);border-radius:5px;padding:10px 12px;text-decoration:none;color:var(--rock);font-size:13px;transition:box-shadow .15s}
-  .link-pill:hover{box-shadow:0 2px 10px var(--shadow)}
+/* NOTES */
+.global-note{background:var(--amber-pale);border:1px solid #e8d5a3;border-left:4px solid var(--amber);border-radius:0 4px 4px 0;padding:12px 16px;margin-bottom:9px}
+.global-note .note-label{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin-bottom:5px}
+.global-note [contenteditable]{font-size:13.5px;display:block;min-height:22px;line-height:1.6}
 
-  /* SAVE BAR */
-  .save-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(247,243,235,0.94);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;z-index:100;gap:12px;flex-wrap:wrap}
-  .save-bar .hint{font-family:'DM Mono',monospace;font-size:11px;color:#999;letter-spacing:.5px}
-  .save-bar .hint a{color:var(--pine);text-decoration:none}
-  .save-bar .btns{display:flex;gap:8px}
-  .btn{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;padding:7px 14px;border-radius:4px;border:none;cursor:pointer;transition:background .15s,transform .1s}
-  .btn:active{transform:scale(.97)}
-  .btn-primary{background:var(--pine);color:white}
-  .btn-primary:hover{background:var(--pine-light)}
-  .btn-secondary{background:var(--paper2);color:var(--rock);border:1px solid var(--border)}
-  .btn-secondary:hover{background:var(--border)}
-  .save-toast{position:fixed;bottom:70px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--pine);color:white;font-family:'DM Mono',monospace;font-size:12px;padding:8px 18px;border-radius:4px;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap;z-index:200}
-  .save-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* ALERT BOX */
+.alert{border-radius:4px;padding:9px 13px;margin-bottom:12px;font-size:13px}
+.alert.warn{background:var(--red-pale);border:1px solid #f0c0b8}
+.alert.info{background:var(--pine-pale);border:1px solid #a8d8b8;color:var(--pine)}
 
-  .divider{border:none;border-top:1.5px solid var(--border);margin:40px 0}
-  @media print{.save-bar,.add-link-row{display:none!important}.day-body{display:block!important}body::before{display:none}.day-card{box-shadow:none}}
+/* LINKS GRID */
+.links-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:9px}
+.link-pill{display:flex;align-items:center;gap:7px;background:white;border:1px solid var(--border);border-radius:5px;padding:9px 12px;text-decoration:none;color:var(--rock);font-size:13px;transition:box-shadow .15s}
+.link-pill:hover{box-shadow:0 2px 10px var(--shadow)}
+
+/* SAVE BAR */
+.save-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(247,243,235,0.94);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:9px 24px;display:flex;align-items:center;justify-content:space-between;z-index:100;gap:12px;flex-wrap:wrap}
+.save-bar .hint{font-family:"DM Mono",monospace;font-size:11px;color:#999}
+.save-bar .hint a{color:var(--pine);text-decoration:none}
+.save-bar .btns{display:flex;gap:8px}
+.btn{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:1px;padding:7px 13px;border-radius:4px;border:none;cursor:pointer;transition:background .15s}
+.btn-primary{background:var(--pine);color:white}
+.btn-primary:hover{background:var(--pine-light)}
+.btn-secondary{background:var(--paper2);color:var(--rock);border:1px solid var(--border)}
+.btn-secondary:hover{background:var(--border)}
+.save-toast{position:fixed;bottom:68px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--pine);color:white;font-family:"DM Mono",monospace;font-size:12px;padding:7px 18px;border-radius:4px;opacity:0;transition:all .3s;pointer-events:none;white-space:nowrap;z-index:200}
+.save-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media print{.save-bar,.add-link-row{display:none!important}.day-body{display:block!important}body::before{display:none}}
 </style>
 </head>
 <body>
 <div class="page">
 
-<!-- ═══ COVER ══════════════════════════════════════════════════════ -->
+<!-- COVER -->
 <div class="cover">
   <div class="cover-label">Cuaderno de viaje · Editable</div>
   <h1>Pirineo en Autocaravana</h1>
-  <div class="subtitle">Aragonés &amp; Catalán · Verano 2025</div>
+  <div class="subtitle">Opción C · Pirineo Aragonés + Aigüestortes · Verano 2025</div>
   <div class="meta">1 – 7 agosto · 2 adultos + 2 niños (11 y 9 años)</div>
   <div class="stats-row">
     <div class="stat"><span class="num">7</span><span class="lbl">días</span></div>
-    <div class="stat"><span class="num">1.620</span><span class="lbl">km totales</span></div>
-    <div class="stat"><span class="num">6</span><span class="lbl">noches</span></div>
-    <div class="stat"><span class="num">4</span><span class="lbl">parques</span></div>
-    <div class="stat"><span class="num">~19h</span><span class="lbl">al volante</span></div>
+    <div class="stat"><span class="num">3</span><span class="lbl">bases</span></div>
+    <div class="stat"><span class="num">~1.340</span><span class="lbl">km totales</span></div>
+    <div class="stat"><span class="num">~4h30</span><span class="lbl">regreso final</span></div>
+    <div class="stat"><span class="num">3</span><span class="lbl">parques</span></div>
   </div>
 </div>
 
-<!-- ═══ RUTA ════════════════════════════════════════════════════════ -->
+<!-- LÓGICA -->
+<section>
+  <div class="section-header">
+    <span class="section-icon">💡</span>
+    <h2>Lógica de la ruta</h2>
+  </div>
+  <div class="alert info">
+    <strong>3 bases fijas</strong> para no mover la autocaravana cada día · Rutas diseñadas para niños de 9 y 11 años · Regreso cómodo desde La Seu d'Urgell (~4h30 hasta Madrid)
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:12px">
+    <div style="background:white;border:1px solid var(--border);border-radius:5px;padding:12px 14px">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--pine);text-transform:uppercase;margin-bottom:6px">Base 1 · Noches 1-2</div>
+      <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--rock)">Torla / Broto</div>
+      <div style="font-size:12px;color:#666;margin-top:3px">Acceso a Ordesa y valle de Broto</div>
+    </div>
+    <div style="background:white;border:1px solid var(--border);border-radius:5px;padding:12px 14px">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--pine);text-transform:uppercase;margin-bottom:6px">Base 2 · Noches 3-4</div>
+      <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--rock)">Aínsa / Bielsa</div>
+      <div style="font-size:12px;color:#666;margin-top:3px">Casco medieval + Valle de Pineta</div>
+    </div>
+    <div style="background:white;border:1px solid var(--border);border-radius:5px;padding:12px 14px">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--pine);text-transform:uppercase;margin-bottom:6px">Base 3 · Noche 5</div>
+      <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--rock)">Vall de Boí</div>
+      <div style="font-size:12px;color:#666;margin-top:3px">Acceso Aigüestortes + románico</div>
+    </div>
+    <div style="background:white;border:1px solid var(--border);border-radius:5px;padding:12px 14px">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--sky);text-transform:uppercase;margin-bottom:6px">Tránsito · Noche 6</div>
+      <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--rock)">La Seu d'Urgell</div>
+      <div style="font-size:12px;color:#666;margin-top:3px">Solo 4h30 hasta Madrid el día 7</div>
+    </div>
+  </div>
+</section>
+
+<!-- RUTA DÍA A DÍA -->
 <section>
   <div class="section-header">
     <span class="section-icon">🗺️</span>
     <h2>Ruta día a día</h2>
-    <span class="tag">▶ clic cabecera para expandir</span>
+    <span class="tag">▶ expandir · ✏️ editable</span>
   </div>
-  <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--sky);background:rgba(74,144,196,0.07);border:1px dashed rgba(74,144,196,0.3);border-radius:4px;padding:8px 14px;margin-bottom:16px;">
-    ✏️ &nbsp;Los textos en azul punteado son editables — haz clic sobre ellos para modificarlos
-  </div>
+  <div class="edit-tip">✏️ Los textos con borde azul punteado son editables — haz clic para modificar. Los cambios se guardan automáticamente.</div>
 
   <!-- DÍA 1 -->
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
-      <div class="day-date"><span class="weekday">VIE</span><span class="daynum">1</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Madrid → Ainsa</h3>
-        <div class="route-line">A-2 → Zaragoza → N-330 → Huesca → A-138</div>
-      </div>
-      <div class="day-km"><span class="km-big">470 km</span><span class="km-time">~5 h</span></div>
+      <div class="day-date" style="background:var(--rock)"><span class="weekday">VIE</span><span class="daynum">1</span><span class="month">AGO</span></div>
+      <div class="day-title"><h3>Madrid → Torla-Ordesa</h3><div class="sub">A-2 → Zaragoza → Huesca → N-330 → A-2611</div></div>
+      <div class="day-km"><span class="km-big">~480 km</span><span class="km-time">~5h 30min</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
-      <div class="camp-badge">⛺ Camping — ver alternativas abajo</div>
+      <span class="base-badge base">🏕 Base 1 · Torla o Broto · Noches 1 y 2</span>
       <div class="info-grid">
         <div class="info-box">
-          <div class="ib-label">Actividades tarde</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Escribe actividades...">Paseo por el casco medieval de Ainsa (s. XI). Plaza Mayor románica, castillo medieval. Cena en El Bodegón de Mallacán.</div>
+          <div class="ib-label">Plan del día</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Salida Madrid ~8-9h. Parada para comer en Huesca o Zaragoza. Llegada Torla sobre las 15-16h. Tarde tranquila: paseo por el casco histórico de Torla o Broto. Sin forzar.</div>
         </div>
         <div class="info-box">
-          <div class="ib-label">Avituallamiento</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas de compras...">Mercadona en Ainsa. Repostar gasoil en Huesca o entrada de Ainsa. Última gran gasolinera antes del Pirineo central.</div>
+          <div class="ib-label">Logística</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Repostar en Huesca (última gasolinera grande). Mercadona en Sabiñánigo para avituallamiento de los primeros días. Llegar al camping antes de las 18h para elegir buena parcela.</div>
         </div>
       </div>
       <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Enlaces fijos</div>
+        <div class="ib-label">🔗 Enlaces</div>
         <div class="links">
-          <a href="https://ainsa.es/turismo" target="_blank">🏰 Turismo Ainsa</a>
-          <a href="https://maps.app.goo.gl/Zr3exrFcWdaB6Zq46" target="_blank">📍 Maps</a>
           <a href="https://infocar.dgt.es" target="_blank">🚦 DGT tráfico</a>
+          <a href="https://www.ordesa.net" target="_blank">🏔 PN Ordesa</a>
         </div>
       </div>
       <div class="alt-section">
-        <div class="alt-title">🏕 Opciones de camping (marca el que elijas)</div>
+        <div class="alt-title">🏕 Campings zona Torla / Broto</div>
         <div class="alt-list">
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">🥇 Camping Peña Montañesa · Labuerda</div>
-              <div class="alt-desc">2 km de Aínsa. Piscinas, supermercado, restaurante. A orillas del río Cinca. Muy familiar. <strong>Mejor alternativa al Ainsa Sobrarbe.</strong></div>
-              <div class="alt-links"><a href="https://www.campings.net/en/camping-pena-montanesa-en-labuerda-ainsa.htm" target="_blank">🌐 Web</a> <a href="tel:+34974500260">📞 974 500 260</a></div>
+              <div class="alt-name">🥇 Camping Ordesa · Torla</div>
+              <div class="alt-desc">El más próximo al PN. Parcelas AC, piscina, bar-restaurante. Base natural para Ordesa.</div>
+              <div class="alt-links"><a href="https://www.campingsaragon.com/camping/ordesa/" target="_blank">🌐 Web</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Camping Ainsa Sobrarbe</div>
-              <div class="alt-desc">Original del plan. A orillas del río Ara, junto al casco medieval. Piscina. Sin disponibilidad en agosto.</div>
-              <div class="alt-links"><a href="https://campingainsa.com" target="_blank">🌐 Web</a> <a href="tel:+34974500260">📞 974 500 260</a></div>
+              <div class="alt-name">Camping Río Ara · Torla</div>
+              <div class="alt-desc">A orillas del río Ara, a las puertas del PN. Muy valorado por familias con autocaravana.</div>
+              <div class="alt-links"><a href="http://www.campingrioaraordesa.com" target="_blank">🌐 Web</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status d" onclick="cycleStatus(this)">❌ sin plaza</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Camping Boltaña</div>
-              <div class="alt-desc">En Boltaña, 7 km de Aínsa por N-260. Parcelas AC, bungalows, admite mascotas.</div>
-              <div class="alt-links"><a href="https://www.campingboltana.com" target="_blank">🌐 Web</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Área AC Morillo de Tou</div>
-              <div class="alt-desc">Pueblo recuperado junto al embalse de Mediano, 4 km de Ainsa. Entorno muy tranquilo.</div>
+              <div class="alt-name">Camping Broto</div>
+              <div class="alt-desc">En Broto, 7 km de Torla. Más servicios en el pueblo, gasolinera cercana. Buena alternativa si Torla está completo.</div>
               <div class="alt-links"><a href="https://park4night.com" target="_blank">📍 Park4Night</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
         </div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Escribe aquí: reservas hechas, pendientes, ideas..."></div>
       </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row">
-          <input type="text" placeholder="Texto" class="inp-txt">
-          <input type="url" placeholder="https://…" class="inp-url">
-          <button onclick="addLink(this)">+ Añadir</button>
-        </div>
-      </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 
   <!-- DÍA 2 -->
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
-      <div class="day-date"><span class="weekday">SÁB</span><span class="daynum">2</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Ainsa → Ordesa y Monte Perdido</h3>
-        <div class="route-line">A-138 → Broto → A-2611 → Torla</div>
-      </div>
-      <div class="day-km"><span class="km-big">35 km</span><span class="km-time">~45 min</span></div>
+      <div class="day-date" style="background:var(--rock)"><span class="weekday">SÁB</span><span class="daynum">2</span><span class="month">AGO</span></div>
+      <div class="day-title"><h3>PN Ordesa y Monte Perdido</h3><div class="sub">Bus lanzadera desde Torla · Sin conducción de AC</div></div>
+      <div class="day-km"><span class="km-big">0 km AC</span><span class="km-time">Bus lanzadera</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
+      <span class="base-badge base">🏕 Base 1 · Torla o Broto · Noche 2</span>
+      <div class="alert warn">⚠️ En agosto madrugar es clave: bus lanzadera desde las 6:00h. Cuanto antes salgas, menos cola y más frescor en la ruta.</div>
       <div class="info-grid">
         <div class="info-box">
-          <div class="ib-label">Ruta principal</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Ruta...">Pradera Ordesa → Circo de Soaso → Cola de Caballo. 13 km · 600 m desnivel · 5-6 h. Apta niños. Llevar bocadillos.</div>
+          <div class="ib-label">Ruta recomendada niños</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Pradera de Ordesa → Cascada del Estrecho → Gradas de Soaso. Ida y vuelta ~10 km, 3-4h, desnivel moderado. Apto para niños de 9 y 11 años sin problema. Si van bien, continuar a Cola de Caballo.</div>
         </div>
         <div class="info-box">
-          <div class="ib-label">Acceso al parque</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Acceso...">Bus-lanzadera obligatorio en verano desde Torla. Sale cada 15 min de 6:00 a 21:00. Dejar AC en parking Torla.</div>
+          <div class="ib-label">Acceso y logística</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Dejar la AC en parking de Torla. Bus lanzadera obligatorio en verano: sale desde Torla cada 15-20 min. Comprar tickets online. Llevar bocadillos para todo el día, el refugio tiene precios altos.</div>
         </div>
       </div>
       <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Enlaces fijos</div>
+        <div class="ib-label">🔗 Enlaces imprescindibles</div>
         <div class="links">
-          <a href="https://www.ordesa.net" target="_blank">🏔 PN Ordesa</a>
-          <a href="https://www.buscandoocio.es" target="_blank">🚌 Bus-lanzadera</a>
-          <a href="https://es.wikiloc.com" target="_blank">🗺 Wikiloc ruta</a>
+          <a href="https://pnomp.es/es/en-bus-lanzadera" target="_blank">🚌 Bus lanzadera Ordesa</a>
+          <a href="https://pnomp.es/es/como-acceder-al-valle-de-ordesa" target="_blank">🏔 Acceso Ordesa</a>
+          <a href="https://es.wikiloc.com" target="_blank">🗺 Wikiloc rutas</a>
         </div>
       </div>
-      <div class="alt-section">
-        <div class="alt-title">🏕 Opciones de camping / área AC</div>
-        <div class="alt-list">
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">🥇 Área AC Torla-Ordesa (municipal)</div>
-              <div class="alt-desc">Junto al acceso al PN. Sin reserva previa, pero llegar antes de las 14h en agosto. Muy bien ubicada.</div>
-              <div class="alt-links"><a href="https://www.campercontact.com" target="_blank">📱 Campercontact</a> <a href="https://park4night.com" target="_blank">📍 Park4Night</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Camping Ordesa · Torla</div>
-              <div class="alt-desc">En la entrada del PN, junto al pueblo. Parcelas AC, bungalows, piscina, bar-restaurante.</div>
-              <div class="alt-links"><a href="https://www.campingsaragon.com/camping/ordesa/" target="_blank">🌐 Web</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Camping Río Ara · Torla</div>
-              <div class="alt-desc">A las puertas del PN, a orillas del río Ara. Muy bien valorado por familias con caravana.</div>
-              <div class="alt-links"><a href="http://www.campingrioaraordesa.com" target="_blank">🌐 Web</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Camping San Anton · Torla</div>
-              <div class="alt-desc">A las puertas del PN Ordesa. Ideal para AC. Opción tranquila y familiar.</div>
-              <div class="alt-links"><a href="https://campingsananton.ordesa.com" target="_blank">🌐 Web</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
+      <div class="info-grid" style="margin-top:0">
+        <div class="info-box">
+          <div class="ib-label">Fauna a avistar</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Sarrios (rebecos) en los prados. Buitres leonados y quebrantahuesos en las paredes rocosas. Marmotas cerca del circo de Soaso. Llevar prismáticos.</div>
+        </div>
+        <div class="info-box">
+          <div class="ib-label">Qué llevar</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Bocadillos y agua para todo el día. Crema solar 50+. Chubasquero ligero (tormentas de tarde). Botas de trekking obligatorias. Gorra y gafas de sol.</div>
         </div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Escribe aquí: bus reservado, hora de salida, ideas..."></div>
       </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div>
-      </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 
   <!-- DÍA 3 -->
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
-      <div class="day-date"><span class="weekday">DOM</span><span class="daynum">3</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Ordesa → Valle de Benasque</h3>
-        <div class="route-line">A-138 → N-260 → A-1605 → A-139 → Benasque</div>
-      </div>
-      <div class="day-km"><span class="km-big">155 km</span><span class="km-time">~2 h 30 min</span></div>
+      <div class="day-date" style="background:#5a6380"><span class="weekday">DOM</span><span class="daynum">3</span><span class="month">AGO</span></div>
+      <div class="day-title"><h3>Torla → Bujaruelo → Aínsa</h3><div class="sub">A-2611 → A-138 → Aínsa</div></div>
+      <div class="day-km"><span class="km-big">~45 km</span><span class="km-time">~1h 15min</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
+      <span class="base-badge base">🏕 Base 2 · Aínsa o Bielsa · Noches 3 y 4</span>
       <div class="info-grid">
         <div class="info-box">
-          <div class="ib-label">Actividades</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Actividades...">Laguna de Llanos de Hospital (2h ida/vuelta, fácil niños). Baño en el río Ésera junto al camping. Forau de l'Aiguallut opcional (3h).</div>
+          <div class="ib-label">Mañana: Bujaruelo</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Valle de Bujaruelo: paseo tranquilo por el valle del río Ara antes de mover la AC. 2-3h sin desnivel, muy agradable para niños. Ideal para recuperar fuerzas tras Ordesa.</div>
         </div>
         <div class="info-box">
-          <div class="ib-label">Avituallamiento</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Compras...">Repostar en Benasque (última gasolinera grande antes de Viella). Supermercado Spar en el pueblo.</div>
+          <div class="ib-label">Tarde: Aínsa</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Traslado a Aínsa (~40 min). Paseo por el casco medieval del s. XI: Plaza Mayor románica, castillo, vistas a la confluencia del Ara y el Cinca. Cena en el pueblo.</div>
         </div>
       </div>
       <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Enlaces fijos</div>
+        <div class="ib-label">🔗 Enlaces</div>
         <div class="links">
-          <a href="https://www.valldebenasque.com" target="_blank">🏔 Valle Benasque</a>
-          <a href="https://www.campinganeto.com" target="_blank">🏕 Camping Aneto</a>
-          <a href="https://es.wikiloc.com" target="_blank">🗺 Wikiloc</a>
+          <a href="https://www.turismosobrarbe.com/ainsa/" target="_blank">🏰 Turismo Aínsa</a>
+          <a href="https://www.campingainsa.com" target="_blank">🏕 Camping Aínsa</a>
         </div>
       </div>
       <div class="alt-section">
-        <div class="alt-title">🏕 Opciones de camping</div>
+        <div class="alt-title">🏕 Campings zona Aínsa / Bielsa</div>
         <div class="alt-list">
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">🥇 Camping Aneto ★★★★ · Benasque</div>
-              <div class="alt-desc">El mejor del valle. Vistas al Aneto (3.404m), piscina, supermercado, parcelas amplias. Imprescindible reservar.</div>
-              <div class="alt-links"><a href="https://www.campinganeto.com" target="_blank">🌐 Web</a> <a href="tel:+34974551141">📞 974 551 141</a></div>
+              <div class="alt-name">🥇 Camping Peña Montañesa · Labuerda</div>
+              <div class="alt-desc">2 km de Aínsa. Piscinas, supermercado, restaurante. A orillas del río Cinca. El mejor de la zona para familias.</div>
+              <div class="alt-links"><a href="https://www.campings.net/en/camping-pena-montanesa-en-labuerda-ainsa.htm" target="_blank">🌐 Web</a> <a href="tel:+34974500260">📞 974 500 260</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Camping La Borda d'Arnaldet · Sesué</div>
-              <div class="alt-desc">A 31 km de Ainsa, en el valle de Benasque. Más tranquilo y pequeño. Parcelas con sombra.</div>
-              <div class="alt-links"><a href="https://park4night.com" target="_blank">🌐 Info</a></div>
+              <div class="alt-name">Camping Ainsa Sobrarbe</div>
+              <div class="alt-desc">Junto al casco medieval de Aínsa, a orillas del Ara. Piscina. Consultar disponibilidad agosto.</div>
+              <div class="alt-links"><a href="https://campingainsa.com" target="_blank">🌐 Web</a> <a href="tel:+34974500260">📞 974 500 260</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Área AC Benasque pueblo</div>
-              <div class="alt-desc">Área municipal junto al pueblo. Gratuita, sin servicios. Consultar en Park4Night.</div>
-              <div class="alt-links"><a href="https://park4night.com" target="_blank">📍 Park4Night</a></div>
+              <div class="alt-name">Camping Bielsa (si base en Bielsa)</div>
+              <div class="alt-desc">Mejor opción si preferís estar más cerca de Pineta. Bielsa está a solo 15 min del valle.</div>
+              <div class="alt-links"><a href="https://www.campingboltana.com" target="_blank">🌐 Info</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
         </div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Escribe aquí: camping elegido, reserva hecha..."></div>
       </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div>
-      </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 
   <!-- DÍA 4 -->
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
-      <div class="day-date"><span class="weekday">LUN</span><span class="daynum">4</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Benasque → Aigüestortes</h3>
-        <div class="route-line">A-139 → Viella → N-230 → C-28 → Esterri d'Àneu</div>
-      </div>
-      <div class="day-km"><span class="km-big">120 km</span><span class="km-time">~2 h</span></div>
+      <div class="day-date" style="background:var(--rock)"><span class="weekday">LUN</span><span class="daynum">4</span><span class="month">AGO</span></div>
+      <div class="day-title"><h3>Valle de Pineta</h3><div class="sub">Excursión desde Aínsa/Bielsa · A-138 + carretera Pineta</div></div>
+      <div class="day-km"><span class="km-big">~60 km</span><span class="km-time">~1h ida-vuelta</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
+      <span class="base-badge excursion">📍 Excursión desde Base 2 · Noche 4 en Aínsa/Bielsa</span>
+      <div class="alert info">💚 Pineta es mucho más tranquilo que Ordesa en agosto y espectacular. Muy recomendado con niños: la relación esfuerzo/paisaje es imbatible.</div>
       <div class="info-grid">
         <div class="info-box">
-          <div class="ib-label">Puerto de la Bonaigua</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas...">2.072 m. Parada obligatoria para fotos. Tramo sinuoso espectacular. Repostar en Viella antes de subir.</div>
+          <div class="ib-label">Ruta recomendada: Llanos de La Larri</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Desde el parking P (fondo del valle) subir por la pista hasta los Llanos de La Larri. ~300 m desnivel, 2h ida. Paisaje de pradera alpina con el circo de Pineta al fondo. Perfecta con niños.</div>
         </div>
         <div class="info-box">
-          <div class="ib-label">Aigüestortes</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas...">Jeep-taxi desde Espot. Ruta Sant Maurici → Estany Llong (10 km, 3-4h). Alternativa: rodear el lago (45 min, llano).</div>
+          <div class="ib-label">Alternativa: Cascada del Cinca</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Desde el mismo parking, desvío hacia la Cascada del Cinca. Algo más corto pero con mucho desnivel al final. Espectacular. Combinar con La Larri si los niños van bien.</div>
         </div>
       </div>
       <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Enlaces fijos</div>
+        <div class="ib-label">🔗 Información oficial</div>
         <div class="links">
-          <a href="https://parcsnaturals.gencat.cat/ca/aiguestortes" target="_blank">🏔 PN Aigüestortes</a>
-          <a href="https://www.taxi4x4espot.com" target="_blank">🚙 Jeep-taxi Espot</a>
-          <a href="https://es.wikiloc.com" target="_blank">🗺 Wikiloc</a>
+          <a href="https://pnomp.es/es/senderos-en-el-valle-de-pineta" target="_blank">🏔 Senderos Pineta (oficial)</a>
+          <a href="https://es.wikiloc.com" target="_blank">🗺 Wikiloc rutas</a>
         </div>
       </div>
-      <div class="alt-section">
-        <div class="alt-title">🏕 Opciones de camping</div>
-        <div class="alt-list">
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">🥇 Camping La Mola ★★★ · Esterri d'Àneu</div>
-              <div class="alt-desc">A 15 min del PN. Piscina, parque infantil, cafetería, terraza restaurante. Reservar en agosto.</div>
-              <div class="alt-links"><a href="https://www.campinglamola.com" target="_blank">🌐 Web</a> <a href="tel:+34973626012">📞 973 626 012</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Aigüestortes Camping Resort · Esterri d'Àneu</div>
-              <div class="alt-desc">La Presalla. 154 parcelas con sombra, bungalows, piscina exterior. A 15 min caminando del pueblo.</div>
-              <div class="alt-links"><a href="https://lapresalla.com" target="_blank">🌐 Info Trivago</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Camping Solau · Espot</div>
-              <div class="alt-desc">Valoración 9.6. Verde y sereno, entre montañas y cascadas. 10 min del PN, 5 min de Espot. Bar, tienda, wifi.</div>
-              <div class="alt-links"><a href="https://www.campingsolau.com" target="_blank">🌐 Pitchup</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Nou Camping · La Guingueta d'Àneu</div>
-              <div class="alt-desc">En el borde del PN Aigüestortes. Piscina climatizada, zona de juegos, restaurante cubierto.</div>
-              <div class="alt-links"><a href="https://www.noucamping.com" target="_blank">🌐 Booking</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-        </div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Ruta elegida, hora de salida, qué llevar..."></div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
-      </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div>
-      </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 
   <!-- DÍA 5 -->
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
-      <div class="day-date"><span class="weekday">MAR</span><span class="daynum">5</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Aigüestortes → La Cerdanya</h3>
-        <div class="route-line">C-28 → La Seu d'Urgell → N-260 → Puigcerdà</div>
-      </div>
-      <div class="day-km"><span class="km-big">130 km</span><span class="km-time">~2 h</span></div>
+      <div class="day-date" style="background:#5a6380"><span class="weekday">MAR</span><span class="daynum">5</span><span class="month">AGO</span></div>
+      <div class="day-title"><h3>Aínsa → Vall de Boí</h3><div class="sub">A-138 → N-230 → L-500 → Boí</div></div>
+      <div class="day-km"><span class="km-big">~130 km</span><span class="km-time">~2h 45min</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
+      <span class="base-badge base">🏕 Base 3 · Vall de Boí · Noche 5</span>
       <div class="info-grid">
         <div class="info-box">
-          <div class="ib-label">Puigcerdà</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas...">Lago artificial: zona de baño y paddle surf. Día más tranquilo. Mercadona para reposición. Mercado sábados.</div>
+          <div class="ib-label">Traslado y llegada</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Salida tranquila de Aínsa. El tramo por la N-230 hacia Viella es espectacular. No meter ruta fuerte hoy: mañana es Aigüestortes y hay que estar frescos.</div>
         </div>
         <div class="info-box">
-          <div class="ib-label">Llívia (excursión)</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas...">Enclave español dentro de Francia, 6 km. Farmacia más antigua de Europa (s. XV). Muy curiosa para los niños.</div>
+          <div class="ib-label">Tarde en Boí</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Visita a los pueblos románicos: Taüll (Sant Climent, s. XII), Erill la Vall, Boí. Patrimonio UNESCO. Muy bonito para pasear tranquilamente con los niños. Baño en el río si apetece.</div>
         </div>
       </div>
       <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Enlaces fijos</div>
+        <div class="ib-label">🔗 Información</div>
         <div class="links">
-          <a href="https://turismeceretania.com" target="_blank">🏘 Turismo Cerdanya</a>
-          <a href="https://www.llivia.org" target="_blank">🇪🇸 Llívia</a>
+          <a href="https://www.vallboi.cat/es" target="_blank">🏘 Turisme Vall de Boí</a>
+          <a href="https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/aiguestortes/gaudeix-del-parc/com-accedir-hi/" target="_blank">🏔 Acceso Aigüestortes</a>
         </div>
       </div>
       <div class="alt-section">
-        <div class="alt-title">🏕 Opciones de camping</div>
+        <div class="alt-title">🏕 Campings zona Vall de Boí</div>
         <div class="alt-list">
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">🥇 Camping Vall de Cerdanya · Puigcerdà</div>
-              <div class="alt-desc">A 1 km del lago. Buen equipamiento para AC. Vistas pirenaicas. Recomendable reservar.</div>
-              <div class="alt-links"><a href="https://www.campingvalldecerdanya.com" target="_blank">🌐 Web</a></div>
+              <div class="alt-name">🥇 Camping Taüll · Taüll</div>
+              <div class="alt-desc">A 1.500 m de altitud, en el corazón del Pirineo catalán. Muy bien situado para visitar Aigüestortes al día siguiente.</div>
+              <div class="alt-links"><a href="https://www.campingtaull.com" target="_blank">🌐 Web</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Camping Stel · Puigcerdà</div>
-              <div class="alt-desc">A 2 km de Puigcerdà. Bungalows rústicos, piscina, restaurante, supermercado. Buena alternativa.</div>
-              <div class="alt-links"><a href="https://www.campingstel.com/es/camping-pirineos/camping-stel-puigcerda/" target="_blank">🌐 Info</a></div>
+              <div class="alt-name">Camping Boí · Boí</div>
+              <div class="alt-desc">En el pueblo de Boí, a la entrada del valle. Acceso fácil para AC. Servicios completos.</div>
+              <div class="alt-links"><a href="https://www.campingboi.com" target="_blank">🌐 Web</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Basecamps Cerdanya · Queixans</div>
-              <div class="alt-desc">Acceso a baño público, bar, cerca de Masella. Valorado por familias. Ambiente activo.</div>
-              <div class="alt-links"><a href="https://www.noucamping.com" target="_blank">🌐 Booking</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Área AC Puigcerdà (junto al lago)</div>
-              <div class="alt-desc">Área de AC en las inmediaciones del lago. Consultar disponibilidad en Park4Night.</div>
+              <div class="alt-name">Área AC Vall de Boí</div>
+              <div class="alt-desc">Área municipal en el valle. Consultar en Park4Night para ubicación exacta y disponibilidad.</div>
               <div class="alt-links"><a href="https://park4night.com" target="_blank">📍 Park4Night</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
         </div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Camping elegido, reserva, hora de llegada..."></div>
       </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div>
-      </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 
   <!-- DÍA 6 -->
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
-      <div class="day-date"><span class="weekday">MIÉ</span><span class="daynum">6</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Cerdanya → Berguedà · Pedraforca</h3>
-        <div class="route-line">C-16 → Túnel del Cadí (~12€) → Guardiola → Berga</div>
-      </div>
-      <div class="day-km"><span class="km-big">90 km</span><span class="km-time">~1 h 15 min</span></div>
+      <div class="day-date" style="background:var(--rock)"><span class="weekday">MIÉ</span><span class="daynum">6</span><span class="month">AGO</span></div>
+      <div class="day-title"><h3>Aigüestortes → La Seu d'Urgell</h3><div class="sub">Mañana PN · Tarde: L-500 → N-260 → La Seu</div></div>
+      <div class="day-km"><span class="km-big">~110 km</span><span class="km-time">~2h tarde</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
+      <span class="base-badge excursion">📍 Aigüestortes mañana · Noche 6 en La Seu d'Urgell</span>
       <div class="info-grid">
         <div class="info-box">
-          <div class="ib-label">Pedraforca</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas...">Icono del Berguedà. Ruta Gresolet → Collada de Verdet (2h, suave, vistas únicas). Repostar en Berga.</div>
+          <div class="ib-label">Mañana: Aigüestortes</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Taxi 4x4 desde Boí (obligatorio en verano). Opción fácil: Planell d'Aigüestortes (2h, muy asequible). Opción completa: continuar hasta Estany Llong (4h, más esfuerzo). Salir antes de las 13:30h para el traslado.</div>
         </div>
         <div class="info-box">
-          <div class="ib-label">Lago de Baells</div>
-          <div class="edit-hint">✏ editable</div>
-          <div contenteditable="true" data-ph="Notas...">Playa fluvial habilitada, kayak, zona pícnic. Ideal baño tras las rutas. Sant Llorenç de Morunys a 20 km.</div>
+          <div class="ib-label">Tarde: La Seu d'Urgell</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Traslado de ~2h hasta La Seu d'Urgell. Paseo por el casco histórico, catedral románica del s. XII. Cena tranquila. Mañana solo 4h30 hasta Madrid: no hay prisa.</div>
         </div>
       </div>
       <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Enlaces fijos</div>
+        <div class="ib-label">🔗 Aigüestortes</div>
         <div class="links">
-          <a href="https://www.tunel-cadi.com" target="_blank">🚗 Túnel del Cadí</a>
-          <a href="https://park4night.com" target="_blank">📍 Park4Night</a>
-          <a href="https://www.campingpedraforca.com" target="_blank">🏕 C. Pedraforca</a>
+          <a href="https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/aiguestortes/gaudeix-del-parc/com-accedir-hi/" target="_blank">🏔 Accesos oficiales</a>
+          <a href="https://www.vallboi.cat/es/ruta/planell-daiguestortes" target="_blank">🗺 Ruta Planell</a>
+          <a href="https://www.vallboi.cat/es/ruta/excursion-planell-daiguestortes-estany-llong" target="_blank">🗺 Ruta Estany Llong</a>
         </div>
       </div>
       <div class="alt-section">
-        <div class="alt-title">🏕 Opciones de camping / área AC</div>
+        <div class="alt-title">🏕 Campings / área La Seu d'Urgell</div>
         <div class="alt-list">
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">🥇 Camping Pedraforca · Guardiola de Berguedà</div>
-              <div class="alt-desc">Al pie del Pedraforca. Pequeño y con encanto. Muy buen emplazamiento para senderismo.</div>
-              <div class="alt-links"><a href="https://www.campingpedraforca.com" target="_blank">🌐 Web</a></div>
+              <div class="alt-name">🥇 Camping Valira · La Seu d'Urgell</div>
+              <div class="alt-desc">El más céntrico de La Seu. Piscina, parcelas amplias, buen acceso para AC. A 10 min del casco histórico.</div>
+              <div class="alt-links"><a href="https://www.campingvalira.com" target="_blank">🌐 Web</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
           <div class="alt-item">
             <div class="alt-info">
-              <div class="alt-name">Wecamp Pedraforca</div>
-              <div class="alt-desc">Formato glamping/camping moderno junto al Pedraforca. Bien valorado, cabañas y parcelas.</div>
-              <div class="alt-links"><a href="https://wecamp.es/es/pedraforca/" target="_blank">🌐 Web</a></div>
+              <div class="alt-name">Área AC La Seu d'Urgell</div>
+              <div class="alt-desc">Área municipal junto al río Valira. Gratuita, sin servicios. Ideal si solo es pernocta de paso.</div>
+              <div class="alt-links"><a href="https://park4night.com" target="_blank">📍 Park4Night</a> <a href="https://www.campercontact.com" target="_blank">📱 Campercontact</a></div>
             </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Camping Cadí Vacances · Gósol</div>
-              <div class="alt-desc">A 1.400 m de altitud, cara sur del Cadí. Único en Cataluña a esa altura. Aire puro y silencio total.</div>
-              <div class="alt-links"><a href="https://park4night.com" target="_blank">🌐 Info</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
-          </div>
-          <div class="alt-item">
-            <div class="alt-info">
-              <div class="alt-name">Área AC Berga (municipal)</div>
-              <div class="alt-desc">Área gratuita o de bajo coste en el municipio de Berga. Consultar en Campercontact.</div>
-              <div class="alt-links"><a href="https://www.campercontact.com" target="_blank">📱 Campercontact</a></div>
-            </div>
-            <div class="alt-status"><button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button></div>
+            <button class="mini-status" onclick="cycleStatus(this)">☐ sin estado</button>
           </div>
         </div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Taxi 4x4 reservado, ruta elegida, camping La Seu..."></div>
       </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div>
-      </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 
@@ -741,167 +608,143 @@
   <div class="day-card">
     <div class="day-header" onclick="toggle(this)">
       <div class="day-date" style="background:var(--pine)"><span class="weekday">JUE</span><span class="daynum">7</span><span class="month">AGO</span></div>
-      <div class="day-title">
-        <h3>Berguedà → Madrid 🏠</h3>
-        <div class="route-line">C-16 → Manresa → A-2 → Zaragoza → Madrid</div>
-      </div>
-      <div class="day-km"><span class="km-big">620 km</span><span class="km-time">~6 h · antes 20h</span></div>
+      <div class="day-title"><h3>La Seu d'Urgell → Madrid 🏠</h3><div class="sub">N-260 → La Seu → C-14 → Lleida → A-2 → Madrid</div></div>
+      <div class="day-km"><span class="km-big">~570 km</span><span class="km-time">~5h · llegada ~13h</span></div>
       <span class="toggle-arrow">▶</span>
     </div>
     <div class="day-body">
       <div class="status-row">
-        <span class="status-label">Estado del día:</span>
+        <span class="status-label">Estado:</span>
         <button class="status-btn" onclick="setStatus(this,'pendiente')">⏳ Pendiente</button>
         <button class="status-btn" onclick="setStatus(this,'confirmado')">✅ Confirmado</button>
-        <button class="status-btn" onclick="setStatus(this,'descartado')">❌ Cambios</button>
+        <button class="status-btn" onclick="setStatus(this,'cambio')">⚠️ Cambios</button>
       </div>
-      <div style="background:var(--red-pale);border:1px solid #f0c0b8;border-radius:4px;padding:10px 14px;margin-bottom:12px;font-size:13px">
-        ⚠️ <strong>Salir antes de las 10:00 h</strong> — en agosto la entrada a Madrid puede tener retenciones desde las 17h.
-      </div>
-      <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">Notas de ruta</div>
-        <div class="edit-hint">✏ editable</div>
-        <div contenteditable="true" data-ph="Notas...">Parada Zaragoza ~350 km para comer y repostar. Vaciar depósito aguas grises antes de salir. Llegada Madrid ~16-17h con margen.</div>
-      </div>
-      <div class="info-box" style="margin-bottom:12px">
-        <div class="ib-label">🔗 Tráfico en tiempo real</div>
-        <div class="links">
-          <a href="https://infocar.dgt.es" target="_blank">🚦 DGT estado carreteras</a>
-          <a href="https://www.google.com/maps/dir/Berga/Madrid" target="_blank">📍 Google Maps Berga→Madrid</a>
+      <div class="alert info">✅ Con salida de La Seu a las 8h llegas a Madrid sobre las 13-13:30h. Margen sobrado para entregar la autocaravana. No programar visitas este día.</div>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="ib-label">Ruta de vuelta</div>
+          <div contenteditable="true" data-ph="Edita aquí...">La Seu → N-260 → C-14 → Lleida → A-2 → Zaragoza → Madrid. Sin peajes significativos. Parada recomendada en Lleida (~2h30 desde La Seu) para comer y repostar.</div>
+        </div>
+        <div class="info-box">
+          <div class="ib-label">Logística entrega</div>
+          <div contenteditable="true" data-ph="Edita aquí...">Vaciar depósito aguas grises antes de salir. Llenar depósito agua limpia si lo exige la empresa. Revisar que no queda nada de valor en la AC. Hora de entrega acordada con la empresa.</div>
         </div>
       </div>
-      <div class="note-area" style="margin-top:14px">
-        <div class="note-label">📝 Mis notas del día</div>
-        <div contenteditable="true" data-ph="Escribe aquí lo que has gestionado, pendiente, ideas..."></div>
+      <div class="info-box" style="margin-bottom:12px">
+        <div class="ib-label">🔗 Tráfico</div>
+        <div class="links">
+          <a href="https://infocar.dgt.es" target="_blank">🚦 DGT estado carreteras</a>
+          <a href="https://www.google.com/maps/dir/La+Seu+d'Urgell/Madrid" target="_blank">📍 Maps La Seu → Madrid</a>
+        </div>
       </div>
-      <div class="link-adder">
-        <div class="note-label" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-top:10px;margin-bottom:5px">+ Mis enlaces</div>
-        <div class="link-list"></div>
-        <div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div>
+      <div class="note-area" style="margin-top:12px">
+        <div class="note-label">📝 Mis notas</div>
+        <div contenteditable="true" data-ph="Hora entrega AC, qué preparar la noche anterior..."></div>
       </div>
+      <div class="link-adder"><div class="la-label">+ Mis enlaces</div><div class="link-list"></div><div class="add-link-row"><input type="text" placeholder="Texto" class="inp-txt"><input type="url" placeholder="https://…" class="inp-url"><button onclick="addLink(this)">+ Añadir</button></div></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ KILOMETRAJE ══════════════════════════════════════════════════ -->
+<!-- KM TABLE -->
 <section>
   <div class="section-header">
     <span class="section-icon">🚗</span>
     <h2>Kilometraje detallado</h2>
-    <span class="tag">total 1.620 km · ~19 h conducción</span>
+    <span class="tag">total ~1.340 km</span>
   </div>
   <div class="km-wrap">
     <table class="km">
-      <thead><tr><th>Día</th><th>Tramo · Carretera</th><th>Km</th><th>Tiempo</th><th>Acum.</th><th>Notas</th></tr></thead>
+      <thead><tr><th>Día</th><th>Tramo</th><th>Km AC</th><th>Tiempo</th><th>Acum.</th><th>Notas</th></tr></thead>
       <tbody>
-        <tr><td><strong>Vie 1</strong></td><td>Madrid → Zaragoza → Huesca → Ainsa<br><small style="color:#aaa">A-2 + N-330 + A-138</small></td><td class="num">470 km</td><td class="num">~5 h</td><td class="num">470</td><td>Parada Zaragoza Norte km 220. Repostar en Huesca.</td></tr>
-        <tr><td><strong>Sáb 2</strong></td><td>Ainsa → Broto → Torla<br><small style="color:#aaa">A-138 + A-2611</small></td><td class="num">35 km</td><td class="num">~45 min</td><td class="num">505</td><td>Parking Torla. Bus-lanzadera al PN obligatorio.</td></tr>
-        <tr><td><strong>Dom 3</strong></td><td>Torla → Ainsa → Benasque<br><small style="color:#aaa">A-138 + N-260 + A-139</small></td><td class="num">155 km</td><td class="num">~2 h 30 min</td><td class="num">660</td><td>Repostar en Benasque (última antes de Viella).</td></tr>
-        <tr><td><strong>Lun 4</strong></td><td>Benasque → Viella → Bonaigua → Esterri<br><small style="color:#aaa">A-139 + N-230 + C-28</small></td><td class="num">120 km</td><td class="num">~2 h</td><td class="num">780</td><td>Puerto Bonaigua 2.072 m. Repostar en Viella.</td></tr>
-        <tr><td><strong>Mar 5</strong></td><td>Esterri d'Àneu → La Seu → Puigcerdà<br><small style="color:#aaa">C-28 + N-260</small></td><td class="num">130 km</td><td class="num">~2 h</td><td class="num">910</td><td>Mercadona Puigcerdà para reposición.</td></tr>
-        <tr><td><strong>Mié 6</strong></td><td>Puigcerdà → Guardiola → Berga<br><small style="color:#aaa">C-16 · Túnel del Cadí</small></td><td class="num">90 km</td><td class="num">~1 h 15 min</td><td class="num">1.000</td><td>Peaje Túnel del Cadí ~12 €. Repostar en Berga.</td></tr>
-        <tr><td><strong>Jue 7</strong></td><td>Berga → Manresa → Zaragoza → Madrid<br><small style="color:#aaa">C-16 + A-2</small></td><td class="num">620 km</td><td class="num">~6 h</td><td class="num">1.620</td><td>Salida antes 10h. Parada Zaragoza para comer.</td></tr>
-        <tr class="total-row"><td colspan="2"><strong>TOTAL · Madrid → Pirineo → Madrid</strong></td><td class="num"><strong>1.620 km</strong></td><td class="num">~19 h</td><td class="num">—</td><td>Combustible est.: ~270-320 L · ~465-490 € (18L/100km · 1,60€/L)</td></tr>
+        <tr><td><strong>Vie 1</strong></td><td>Madrid → Torla<br><small style="color:#aaa">A-2 + N-330 + A-2611</small></td><td class="num">480 km</td><td class="num">~5h 30</td><td class="num">480</td><td>Parada Zaragoza ~220 km. Repostar en Huesca.</td></tr>
+        <tr><td><strong>Sáb 2</strong></td><td>Sin conducción AC<br><small style="color:#aaa">Bus lanzadera Torla → Ordesa</small></td><td class="num">0 km</td><td class="num">Bus</td><td class="num">480</td><td>Dejar AC en parking Torla. Bus desde 6:00h.</td></tr>
+        <tr><td><strong>Dom 3</strong></td><td>Torla → Bujaruelo → Aínsa<br><small style="color:#aaa">A-2611 + A-138</small></td><td class="num">45 km</td><td class="num">~1h 15</td><td class="num">525</td><td>Mañana en Bujaruelo. Tarde en Aínsa.</td></tr>
+        <tr><td><strong>Lun 4</strong></td><td>Aínsa → Pineta → Aínsa<br><small style="color:#aaa">A-138 + carretera Pineta (ida/vuelta)</small></td><td class="num">60 km</td><td class="num">~1h</td><td class="num">585</td><td>Excursión día completo. Noche en Aínsa/Bielsa.</td></tr>
+        <tr><td><strong>Mar 5</strong></td><td>Aínsa → Vall de Boí<br><small style="color:#aaa">A-138 + N-230 + L-500</small></td><td class="num">130 km</td><td class="num">~2h 45</td><td class="num">715</td><td>Tramo N-230 espectacular. Llegada Boí ~14h.</td></tr>
+        <tr><td><strong>Mié 6</strong></td><td>Boí → (Aigüestortes taxi) → La Seu d'Urgell<br><small style="color:#aaa">L-500 + N-260</small></td><td class="num">110 km</td><td class="num">~2h</td><td class="num">825</td><td>Taxi 4x4 mañana. AC: Boí → La Seu tarde.</td></tr>
+        <tr><td><strong>Jue 7</strong></td><td>La Seu d'Urgell → Lleida → Madrid<br><small style="color:#aaa">N-260 + C-14 + A-2</small></td><td class="num">~515 km</td><td class="num">~5h</td><td class="num">1.340</td><td>Salida 8h → Madrid ~13h. Parada Lleida km 250.</td></tr>
+        <tr class="total-row"><td colspan="2"><strong>TOTAL</strong></td><td class="num"><strong>~1.340 km</strong></td><td class="num">~17h</td><td class="num">—</td><td>Combustible est.: ~240 L · ~385 € (18L/100km · 1,60€/L)</td></tr>
       </tbody>
-      <tfoot><tr><td colspan="6">⛽ Gasolineras clave: Huesca · Benasque · Viella · Puigcerdà · Berga &nbsp;|&nbsp; 🛣 Peajes: solo Túnel del Cadí ~12 €</td></tr></tfoot>
+      <tfoot><tr><td colspan="6">⛽ Gasolineras clave: Huesca (día 1) · Sabiñánigo (día 1) · Lleida (día 7) &nbsp;|&nbsp; 🛣 Sin peajes en esta ruta</td></tr></tfoot>
     </table>
   </div>
 </section>
 
-<!-- ═══ CHECKLIST ══════════════════════════════════════════════════ -->
+<!-- CHECKLIST -->
 <section>
-  <div class="section-header">
-    <span class="section-icon">✅</span>
-    <h2>Checklist</h2>
-    <span class="tag">haz clic para marcar</span>
-  </div>
+  <div class="section-header"><span class="section-icon">✅</span><h2>Checklist</h2><span class="tag">clic para marcar</span></div>
   <div class="check-group">
-    <h3>🔴 Reservas — gestionar YA</h3>
-    <div class="check-item"><input type="checkbox" id="c1"><label for="c1">Camping noche 1 (Ainsa / Peña Montañesa / Boltaña) <span class="check-link"><a href="https://campingainsa.com" target="_blank">↗ Ainsa</a> <a href="https://www.campings.net/en/camping-pena-montanesa-en-labuerda-ainsa.htm" target="_blank">↗ Peña Montañesa</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="c2"><label for="c2">Camping Aneto, Benasque · noche 3 <span class="check-link"><a href="https://www.campinganeto.com" target="_blank">↗ web</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="c3"><label for="c3">Camping zona Aigüestortes · noche 4 <span class="check-link"><a href="https://www.campinglamola.com" target="_blank">↗ La Mola</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="c4"><label for="c4">Camping Cerdanya, Puigcerdà · noche 5 <span class="check-link"><a href="https://www.campingvalldecerdanya.com" target="_blank">↗ web</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="c5"><label for="c5">Camping Berguedà (Pedraforca / Cadí) · noche 6 <span class="check-link"><a href="https://www.campingpedraforca.com" target="_blank">↗ web</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="c6"><label for="c6">Bus-lanzadera Torla → Ordesa <span class="check-link"><a href="https://www.buscandoocio.es" target="_blank">↗ comprar online</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="c7"><label for="c7">Jeep-taxi Espot → Aigüestortes · Tel. 973 624 105 <span class="check-link"><a href="https://www.taxi4x4espot.com" target="_blank">↗ web</a></span></label></div>
+    <h3>🔴 Reservas — gestionar ya</h3>
+    <div class="check-item"><input type="checkbox" id="c1"><label for="c1">Camping zona Torla/Broto · 2 noches (vie 1 y sáb 2) <span class="check-link"><a href="https://www.campingsaragon.com/camping/ordesa/" target="_blank">↗ C. Ordesa</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="c2"><label for="c2">Camping zona Aínsa/Bielsa · 2 noches (dom 3 y lun 4) <span class="check-link"><a href="https://www.campings.net/en/camping-pena-montanesa-en-labuerda-ainsa.htm" target="_blank">↗ Peña Montañesa</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="c3"><label for="c3">Camping Vall de Boí · 1 noche (mar 5) <span class="check-link"><a href="https://www.campingtaull.com" target="_blank">↗ C. Taüll</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="c4"><label for="c4">Camping / área La Seu d'Urgell · 1 noche (mié 6) <span class="check-link"><a href="https://www.campingvalira.com" target="_blank">↗ C. Valira</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="c5"><label for="c5">Bus lanzadera Torla → Ordesa (día 2) <span class="check-link"><a href="https://pnomp.es/es/en-bus-lanzadera" target="_blank">↗ Comprar</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="c6"><label for="c6">Taxi 4x4 Boí → Aigüestortes (día 6) <span class="check-link"><a href="https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/aiguestortes/gaudeix-del-parc/com-accedir-hi/" target="_blank">↗ Info</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="c7"><label for="c7">Confirmar hora entrega autocaravana (día 7)</label></div>
   </div>
   <div class="check-group">
     <h3>🚐 Autocaravana</h3>
-    <div class="check-item"><input type="checkbox" id="a1"><label for="a1">ITV vigente y seguro en vigor</label></div>
+    <div class="check-item"><input type="checkbox" id="a1"><label for="a1">ITV y seguro vigentes · documentación a bordo</label></div>
     <div class="check-item"><input type="checkbox" id="a2"><label for="a2">Seguro de viaje / asistencia en carretera</label></div>
-    <div class="check-item"><input type="checkbox" id="a3"><label for="a3">Depósito agua limpia lleno · manguera y racor</label></div>
-    <div class="check-item"><input type="checkbox" id="a4"><label for="a4">Vaciado depósito aguas grises</label></div>
-    <div class="check-item"><input type="checkbox" id="a5"><label for="a5">Gas butano / propano (2 bombonas mínimo)</label></div>
-    <div class="check-item"><input type="checkbox" id="a6"><label for="a6">Tabla de nivelación (calzos) y adaptador corriente</label></div>
-    <div class="check-item"><input type="checkbox" id="a7"><label for="a7">Mapas offline descargados (Google Maps / Maps.me)</label></div>
-    <div class="check-item"><input type="checkbox" id="a8"><label for="a8">Apps: Park4Night · Campercontact · Wikiloc</label></div>
+    <div class="check-item"><input type="checkbox" id="a3"><label for="a3">Depósito agua lleno · manguera y racor</label></div>
+    <div class="check-item"><input type="checkbox" id="a4"><label for="a4">Gas (2 bombonas) · calzos nivelación</label></div>
+    <div class="check-item"><input type="checkbox" id="a5"><label for="a5">Apps: Park4Night · Campercontact · Wikiloc · Maps offline</label></div>
   </div>
   <div class="check-group">
-    <h3>🛒 Comida y menaje</h3>
-    <div class="check-item"><input type="checkbox" id="f1"><label for="f1">Pasta, arroz, legumbres · conservas</label></div>
-    <div class="check-item"><input type="checkbox" id="f2"><label for="f2">Jamón, queso, embutido · bocadillos</label></div>
-    <div class="check-item"><input type="checkbox" id="f3"><label for="f3">Pan, fruta y verdura (3-4 días)</label></div>
-    <div class="check-item"><input type="checkbox" id="f4"><label for="f4">Snacks montaña: frutos secos, barritas</label></div>
-    <div class="check-item"><input type="checkbox" id="f5"><label for="f5">Agua 20 L + botellas para excursiones</label></div>
-    <div class="check-item"><input type="checkbox" id="f6"><label for="f6">Cereales / ColaCao · huevos</label></div>
-    <div class="check-item"><input type="checkbox" id="f7"><label for="f7">Sartén, cazo, utensilios · lavavajillas bio</label></div>
-    <div class="check-item"><input type="checkbox" id="f8"><label for="f8">Nevera portátil extra (excursiones)</label></div>
+    <h3>🛒 Comida</h3>
+    <div class="check-item"><input type="checkbox" id="f1"><label for="f1">Base: pasta, arroz, conservas, embutido</label></div>
+    <div class="check-item"><input type="checkbox" id="f2"><label for="f2">Snacks montaña: frutos secos, barritas, fruta</label></div>
+    <div class="check-item"><input type="checkbox" id="f3"><label for="f3">Agua 20L + botellas para excursiones</label></div>
+    <div class="check-item"><input type="checkbox" id="f4"><label for="f4">Desayunos niños: cereales, ColaCao, fruta</label></div>
+    <div class="check-item"><input type="checkbox" id="f5"><label for="f5">Reposición en Sabiñánigo o Huesca (día 1)</label></div>
   </div>
   <div class="check-group">
     <h3>👨‍👩‍👧‍👦 Familia</h3>
-    <div class="check-item"><input type="checkbox" id="p1"><label for="p1">DNI / pasaportes · 4 personas</label></div>
-    <div class="check-item"><input type="checkbox" id="p2"><label for="p2">Tarjeta Sanitaria Europea (TSE) × 4 <span class="check-link"><a href="https://www.seg-social.es" target="_blank">↗ pedir</a></span></label></div>
-    <div class="check-item"><input type="checkbox" id="p3"><label for="p3">Crema solar SPF 50+ · gorra y gafas</label></div>
-    <div class="check-item"><input type="checkbox" id="p4"><label for="p4">Botiquín: tiritas, paracetamol, antihistamínico</label></div>
-    <div class="check-item"><input type="checkbox" id="p5"><label for="p5">Botas de trekking · 4 personas</label></div>
-    <div class="check-item"><input type="checkbox" id="p6"><label for="p6">Ropa de abrigo (noches 10-15°C) · chubasquero × 4</label></div>
-    <div class="check-item"><input type="checkbox" id="p7"><label for="p7">Bañador · guía fauna Pirineo · prismáticos</label></div>
-    <div class="check-item"><input type="checkbox" id="p8"><label for="p8">Tablet cargada + contenido offline · cargadores</label></div>
+    <div class="check-item"><input type="checkbox" id="p1"><label for="p1">DNI × 4 · Tarjeta Sanitaria Europea × 4 <span class="check-link"><a href="https://www.seg-social.es" target="_blank">↗ pedir TSE</a></span></label></div>
+    <div class="check-item"><input type="checkbox" id="p2"><label for="p2">Botas trekking × 4 · chubasquero × 4</label></div>
+    <div class="check-item"><input type="checkbox" id="p3"><label for="p3">Crema solar 50+ · repelente · botiquín</label></div>
+    <div class="check-item"><input type="checkbox" id="p4"><label for="p4">Ropa de abrigo (noches frescas, ~12-15°C)</label></div>
+    <div class="check-item"><input type="checkbox" id="p5"><label for="p5">Bañador · prismáticos · guía fauna Pirineo</label></div>
+    <div class="check-item"><input type="checkbox" id="p6"><label for="p6">Tablet cargada + contenido offline · cargadores</label></div>
   </div>
 </section>
 
-<!-- ═══ NOTAS GENERALES ════════════════════════════════════════════ -->
+<!-- NOTAS -->
 <section>
-  <div class="section-header">
-    <span class="section-icon">📝</span>
-    <h2>Notas generales</h2>
-    <span class="tag">clic para editar</span>
-  </div>
-  <div class="global-note"><div class="note-label">Nota 1 — Presupuesto / gastos</div><div contenteditable="true" data-ph="Anota aquí el presupuesto estimado, gastos confirmados..."></div></div>
-  <div class="global-note"><div class="note-label">Nota 2 — Contactos importantes</div><div contenteditable="true" data-ph="Teléfonos de campings, seguros, asistencia en carretera..."></div></div>
-  <div class="global-note"><div class="note-label">Nota 3 — Ideas y pendientes</div><div contenteditable="true" data-ph="Cosas por hacer, dudas, ideas que han surgido..."></div></div>
-  <div class="global-note"><div class="note-label">Nota 4 — Libre</div><div contenteditable="true" data-ph="Lo que necesites..."></div></div>
+  <div class="section-header"><span class="section-icon">📝</span><h2>Notas generales</h2><span class="tag">editable</span></div>
+  <div class="global-note"><div class="note-label">Presupuesto y gastos</div><div contenteditable="true" data-ph="Combustible ~385€ · Campings · Taxis · Comida..."></div></div>
+  <div class="global-note"><div class="note-label">Contactos importantes</div><div contenteditable="true" data-ph="Empresa AC, campings, seguros, asistencia..."></div></div>
+  <div class="global-note"><div class="note-label">Pendientes y recordatorios</div><div contenteditable="true" data-ph="Lo que falta gestionar..."></div></div>
+  <div class="global-note"><div class="note-label">Notas libres</div><div contenteditable="true" data-ph="Cualquier cosa..."></div></div>
 </section>
 
-<!-- ═══ ENLACES ÚTILES ════════════════════════════════════════════ -->
+<!-- ENLACES -->
 <section>
-  <div class="section-header">
-    <span class="section-icon">🔗</span>
-    <h2>Enlaces útiles</h2>
-  </div>
+  <div class="section-header"><span class="section-icon">🔗</span><h2>Enlaces útiles</h2></div>
   <div class="links-grid">
-    <a href="https://www.ordesa.net" target="_blank" class="link-pill">🏔 PN Ordesa oficial</a>
-    <a href="https://parcsnaturals.gencat.cat/ca/aiguestortes" target="_blank" class="link-pill">🏔 PN Aigüestortes</a>
-    <a href="https://infocar.dgt.es" target="_blank" class="link-pill">🚦 DGT · carreteras</a>
-    <a href="https://es.wikiloc.com" target="_blank" class="link-pill">🗺 Wikiloc · rutas GPS</a>
-    <a href="https://park4night.com" target="_blank" class="link-pill">🅿 Park4Night · AC</a>
+    <a href="https://pnomp.es/es/en-bus-lanzadera" target="_blank" class="link-pill">🚌 Bus lanzadera Ordesa</a>
+    <a href="https://pnomp.es/es/como-acceder-al-valle-de-ordesa" target="_blank" class="link-pill">🏔 Acceso valle Ordesa</a>
+    <a href="https://pnomp.es/es/senderos-en-el-valle-de-pineta" target="_blank" class="link-pill">🏔 Senderos Pineta</a>
+    <a href="https://parcsnaturals.gencat.cat/es/xarxa-de-parcs/aiguestortes/gaudeix-del-parc/com-accedir-hi/" target="_blank" class="link-pill">🏔 Acceso Aigüestortes</a>
+    <a href="https://www.vallboi.cat/es/ruta/planell-daiguestortes" target="_blank" class="link-pill">🗺 Ruta Planell Aigüestortes</a>
+    <a href="https://www.vallboi.cat/es/ruta/excursion-planell-daiguestortes-estany-llong" target="_blank" class="link-pill">🗺 Ruta Estany Llong</a>
+    <a href="https://www.turismosobrarbe.com/ainsa/" target="_blank" class="link-pill">🏰 Turismo Aínsa</a>
+    <a href="https://www.vallboi.cat/es" target="_blank" class="link-pill">🏘 Turisme Vall de Boí</a>
+    <a href="https://infocar.dgt.es" target="_blank" class="link-pill">🚦 DGT carreteras</a>
+    <a href="https://es.wikiloc.com" target="_blank" class="link-pill">🗺 Wikiloc rutas GPS</a>
+    <a href="https://park4night.com" target="_blank" class="link-pill">🅿 Park4Night AC</a>
     <a href="https://www.campercontact.com" target="_blank" class="link-pill">🚐 Campercontact</a>
-    <a href="https://www.gasolineras.net" target="_blank" class="link-pill">⛽ Gasolineras · precios</a>
-    <a href="https://www.tunel-cadi.com" target="_blank" class="link-pill">🚗 Túnel del Cadí</a>
     <a href="https://www.aemet.es/es/eltiempo/prediccion/montana" target="_blank" class="link-pill">🌤 AEMET montaña</a>
-    <a href="https://www.meteo.cat" target="_blank" class="link-pill">🌤 Meteo.cat Pirineo</a>
     <a href="https://www.seg-social.es" target="_blank" class="link-pill">🏥 Tarjeta Sanitaria EU</a>
-    <a href="https://www.buscandoocio.es" target="_blank" class="link-pill">🚌 Bus-lanzadera Ordesa</a>
-    <a href="https://www.taxi4x4espot.com" target="_blank" class="link-pill">🚙 Jeep-taxi Espot</a>
-    <a href="https://maps.me" target="_blank" class="link-pill">📱 Maps.me offline</a>
   </div>
 </section>
 
-</div><!-- /page -->
+</div>
 
-<!-- ═══ SAVE BAR ══════════════════════════════════════════════════ -->
 <div class="save-bar">
-  <span class="hint">Todo se guarda automáticamente · <a href="#" onclick="exportHTML(event)">💾 exportar como HTML</a></span>
+  <span class="hint">Guardado automático · <a href="#" onclick="exportHTML(event)">💾 exportar HTML</a></span>
   <div class="btns">
     <button class="btn btn-secondary" onclick="expandAll()">Expandir todo</button>
     <button class="btn btn-primary" onclick="saveToLocal()">💾 Guardar</button>
@@ -910,116 +753,19 @@
 <div class="save-toast" id="toast">✓ Guardado</div>
 
 <script>
-// ── TOGGLE ────────────────────────────────────────────────────────
-function toggle(h){
-  const b=h.nextElementSibling, a=h.querySelector('.toggle-arrow');
-  const o=b.classList.toggle('open');
-  if(a) a.classList.toggle('open',o);
-}
-function expandAll(){
-  document.querySelectorAll('.day-body').forEach(b=>b.classList.add('open'));
-  document.querySelectorAll('.toggle-arrow').forEach(a=>a.classList.add('open'));
-}
-
-// ── STATUS BUTTONS ────────────────────────────────────────────────
-function setStatus(btn,s){
-  const row=btn.closest('.status-row');
-  row.querySelectorAll('.status-btn').forEach(b=>{
-    b.className='status-btn';
-    if(b===btn) b.classList.add('active-'+s);
-  });
-  autoSave();
-}
-
-// ── MINI STATUS CYCLE ─────────────────────────────────────────────
-const statusCycle=[
-  {cls:'',label:'☐ sin estado'},
-  {cls:'p',label:'⏳ pendiente'},
-  {cls:'c',label:'✅ confirmado'},
-  {cls:'d',label:'❌ descartado'}
-];
-function cycleStatus(btn){
-  const cur=statusCycle.findIndex(s=>s.label===btn.textContent.trim());
-  const next=statusCycle[(cur+1)%statusCycle.length];
-  btn.textContent=next.label;
-  btn.className='mini-status'+(next.cls?' '+next.cls:'');
-  autoSave();
-}
-
-// ── ADD LINK ──────────────────────────────────────────────────────
-function addLink(btn){
-  const row=btn.closest('.add-link-row');
-  const txt=row.querySelector('.inp-txt').value.trim();
-  const url=row.querySelector('.inp-url').value.trim();
-  if(!txt||!url) return;
-  const list=btn.closest('.link-adder').querySelector('.link-list');
-  appendLink(list,txt,url);
-  row.querySelector('.inp-txt').value='';
-  row.querySelector('.inp-url').value='';
-  autoSave();
-}
-function appendLink(list,txt,url){
-  const span=document.createElement('span');
-  span.style.cssText='display:inline-flex;align-items:center;margin:0 8px 3px 0';
-  const a=document.createElement('a');
-  a.href=url; a.target='_blank'; a.textContent='↗ '+txt;
-  const d=document.createElement('button');
-  d.className='del-link'; d.text.onclick=()=>{span.remove();autoSave()};
-  span.appendChild(a); span.appendChild(d);
-  list.appendChild(span);
-}
-
-// ── PERSIST ──────────────────────────────────────────────────────
-function collectState(){
-  const s={checks:{},globalNotes:[],days:[]};
-  document.querySelectorAll('input[type=checkbox]').forEach(cb=>{s.checks[cb.id]=cb.checked});
-  document.querySelectorAll('.global-note [contenteditable]').forEach((el,i)=>{s.globalNotes[i]=el.innerHTML});
-  document.querySelectorAll('.day-body').forEach((body,i)=>{
-    const note=body.querySelector('.note-area [contenteditable]');
-    const infos=[]; body.querySelectorAll('.info-box [contenteditable]').forEach(el=>infos.push(el.innerHTML));
-    const links=[]; body.querySelectorAll('.link-list a').forEach(a=>links.push({txt:a.textContent.replace('\u2197 ',''),url:a.href}));
-    const minis=[]; body.querySelectorAll('.mini-status').forEach(b=>minis.push({cls:b.className,label:b.textContent}));
-    const statusBtn=body.querySelector('.status-btn[class*="active"]');
-    s.days[i]={note:note?note.innerHTML:'',infos,links,minis,status:statusBtn?statusBtn.className:''};
-  });
-  return s;
-}
-function applyState(s){
-  if(!s) return;
-  if(s.checks) Object.entries(s.checks).forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.checked=v});
-  if(s.globalNotes) document.querySelectorAll('.global-note [contenteditable]').forEach((el,i)=>{if(s.globalNotes[i]!==undefined)el.innerHTML=s.globalNotes[i]});
-  if(s.days) document.querySelectorAll('.day-body').forEach((body,i)=>{
-    const d=s.days[i]; if(!d) return;
-    const note=body.querySelector('.note-area [contenteditable]');
-    if(note&&d.note!==undefined) note.innerHTML=d.note;
-    const infos=body.querySelectorAll('.info-box [contenteditable]');
-    if(d.infos) infos.forEach((el,j)=>{if(d.infos[j]!==undefined)el.innerHTML=d.infos[j]});
-    if(d.links){const list=body.querySelector('.link-list');if(list)d.links.forEach(lk=>appendLink(list,lk.txt,lk.url));}
-    if(d.minis){const btns=body.querySelectorAll('.mini-status');btns.forEach((b,j)=>{if(d.minis[j]){b.className=d.minis[j].cls;b.textContent=d.minis[j].label;}});}
-    if(d.status&&d.status.includes('active')){
-      const match=d.status.match(/active-(\w+)/);
-      if(match){const sb=body.querySelector('.status-btn[onclick*="'+match[1]+'"]');if(sb)sb.classList.add('active-'+match[1]);}
-    }
-  });
-}
-function saveToLocal(){
-  try{localStorage.setItem('pirineo2025v2',JSON.stringify(collectState()));}catch(e){}
-  const t=document.getElementById('toast');
-  t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000);
-}
-let timer;
-function autoSave(){clearTimeout(timer);timer=setTimeout(saveToLocal,1000);}
-function exportHTML(e){
-  e.preventDefault(); saveToLocal();
-  const blob=new Blob([document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob); a.download='Ruta_Pirineo_2025.html'; a.click();
-}
-document.addEventListener('DOMContentLoaded',()=>{
-  try{const saved=localStorage.getItem('pirineo2025v2');if(saved)applyState(JSON.parse(saved));}catch(e){}
-  document.addEventListener('input',autoSave);
-  document.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.addEventListener('change',autoSave));
-});
+function toggle(h){const b=h.nextElementSibling,a=h.querySelector(".toggle-arrow");const o=b.classList.toggle("open");if(a)a.classList.toggle("open",o);}
+function expandAll(){document.querySelectorAll(".day-body").forEach(b=>b.classList.add("open"));document.querySelectorAll(".toggle-arrow").forEach(a=>a.classList.add("open"));}
+function setStatus(btn,s){const row=btn.closest(".status-row");row.querySelectorAll(".status-btn").forEach(b=>{b.className="status-btn";if(b===btn)b.classList.add("active-"+s);});autoSave();}
+const SC=[{cls:"",lbl:"☐ sin estado"},{cls:"p",lbl:"⏳ pendiente"},{cls:"c",lbl:"✅ confirmado"},{cls:"d",lbl:"❌ descartado"}];
+function cycleStatus(btn){const cur=SC.findIndex(s=>s.lbl===btn.textContent.trim());const nxt=SC[(cur+1)%SC.length];btn.textContent=nxt.lbl;btn.className="mini-status"+(nxt.cls?" "+nxt.cls:"");autoSave();}
+function addLink(btn){const row=btn.closest(".add-link-row");const txt=row.querySelector(".inp-txt").value.trim();const url=row.querySelector(".inp-url").value.trim();if(!txt||!url)return;const list=btn.closest(".link-adder").querySelector(".link-list");appendLink(list,txt,url);row.querySelector(".inp-txt").value="";row.querySelector(".inp-url").value="";autoSave();}
+function appendLink(list,txt,url){const span=document.createElement("span");span.style.cssText="display:inline-flex;align-items:center;margin:0 8px 3px 0";const a=document.createElement("a");a.href=url;a.target="_blank";a.textContent="↗ "+txt;const d=document.createElement("button");d.className="del-link";d.textContent="×";d.onclick=()=>{span.remove();autoSave();};span.appendChild(a);span.appendChild(d);list.appendChild(span);}
+function collectState(){const s={checks:{},gNotes:[],days:[]};document.querySelectorAll("input[type=checkbox]").forEach(cb=>{s.checks[cb.id]=cb.checked;});document.querySelectorAll(".global-note [contenteditable]").forEach((el,i)=>{s.gNotes[i]=el.innerHTML;});document.querySelectorAll(".day-body").forEach((body,i)=>{const note=body.querySelector(".note-area [contenteditable]");const infos=[];body.querySelectorAll(".info-box [contenteditable]").forEach(el=>infos.push(el.innerHTML));const links=[];body.querySelectorAll(".link-list a").forEach(a=>links.push({txt:a.textContent.replace("↗ ",""),url:a.href}));const minis=[];body.querySelectorAll(".mini-status").forEach(b=>minis.push({cls:b.className,lbl:b.textContent}));const sb=body.querySelector(".status-btn[class*=active]");s.days[i]={note:note?note.innerHTML:"",infos,links,minis,status:sb?sb.className:""};});return s;}
+function applyState(s){if(!s)return;if(s.checks)Object.entries(s.checks).forEach(([id,v])=>{const el=document.getElementById(id);if(el)el.checked=v;});if(s.gNotes)document.querySelectorAll(".global-note [contenteditable]").forEach((el,i)=>{if(s.gNotes[i]!==undefined)el.innerHTML=s.gNotes[i];});if(s.days)document.querySelectorAll(".day-body").forEach((body,i)=>{const d=s.days[i];if(!d)return;const note=body.querySelector(".note-area [contenteditable]");if(note&&d.note!==undefined)note.innerHTML=d.note;const infos=body.querySelectorAll(".info-box [contenteditable]");if(d.infos)infos.forEach((el,j)=>{if(d.infos[j]!==undefined)el.innerHTML=d.infos[j];});if(d.links){const list=body.querySelector(".link-list");if(list)d.links.forEach(lk=>appendLink(list,lk.txt,lk.url));}if(d.minis){const btns=body.querySelectorAll(".mini-status");btns.forEach((b,j)=>{if(d.minis[j]){b.className=d.minis[j].cls;b.textContent=d.minis[j].lbl;}});}if(d.status&&d.status.includes("active")){const m=d.status.match(/active-(\w+)/);if(m){const sb=body.querySelector('[onclick*="'+m[1]+'"]');if(sb)sb.classList.add("active-"+m[1]);}}});}
+function saveToLocal(){try{localStorage.setItem("pirineo2025v3",JSON.stringify(collectState()));}catch(e){}const t=document.getElementById("toast");t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2000);}
+let timer;function autoSave(){clearTimeout(timer);timer=setTimeout(saveToLocal,1000);}
+function exportHTML(e){e.preventDefault();saveToLocal();const blob=new Blob([document.documentElement.outerHTML],{type:"text/html;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Ruta_Pirineo_2025.html";a.click();}
+document.addEventListener("DOMContentLoaded",()=>{try{const sv=localStorage.getItem("pirineo2025v3");if(sv)applyState(JSON.parse(sv));}catch(e){}document.addEventListener("input",autoSave);document.querySelectorAll("input[type=checkbox]").forEach(cb=>cb.addEventListener("change",autoSave));});
 </script>
 </body>
 </html>
